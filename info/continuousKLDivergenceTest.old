@@ -1,0 +1,262 @@
+p = (1:8)/9;
+q = 0.5;
+
+K = (log(p)-log(q)+q./p-1);
+
+ns = ceil(logspace(0.5,3.5,7));
+
+%%
+
+Khat = zeros(10,7,8,2);
+
+for ii = 1:7
+    n = ns(ii);
+    
+    for jj = 1:10
+        for kk = 1:8
+            tic;
+            x = exprnd(1/p(kk),n,1);
+            y = exprnd(1/q,n,1);
+            
+            for ll = 1
+                Khat(jj,ii,kk,ll) = continuousKLDivergence(x,y,1,'b',ll-1);
+            end
+            toc;
+        end
+    end
+end
+
+%%
+
+K = repmat(reshape(K,[1 1 8]),[10 7 1 2]);
+mdK = squeeze(mean(abs(Khat-K)));
+sdK = squeeze(std(abs(Khat-K)));
+
+%%
+
+figure;
+hold on;
+
+errorbar(repmat(ns',1,8),mdK(:,:,1),sdK(:,:,1));
+% errorbar(repmat(ns',1,8),mdK(:,:,2),sdK(:,:,2),'LineStyle','--');
+
+set(gca,'XScale','log');
+
+xlabel('# Samples');
+ylabel('Absolute Error (bits)');
+
+%%
+
+mpK = squeeze(mean(100*abs(Khat-K)./K));
+spK = squeeze(std(100*abs(Khat-K)./K));
+
+figure;
+hold on;
+
+errorbar(repmat(ns',1,8),mpK(:,:,1),spK(:,:,1));
+% errorbar(repmat(ns',1,8),mpK(:,:,2),spK(:,:,2),'LineStyle','--');
+
+set(gca,'XScale','log');
+
+xlabel('# Samples');
+ylabel('% Error');
+
+%%
+
+ns = [Inf 16:-1:0];
+
+%%
+
+Kbar = zeros(10,18,8);
+
+for ii = 1:8
+    for jj = 1:10
+        x = exprnd(1/p(ii),1000,1);
+        y = exprnd(1/q,1000,1);
+    
+        for kk = 1:18
+            tic;
+            x = x + normrnd(0,10.^-ns(kk),1000,1);
+            y = y + normrnd(0,10.^-ns(kk),1000,1);
+            
+            Kbar(jj,kk,ii) = continuousKLDivergence(x,y,1,'b',false);
+            toc;
+        end
+    end
+end
+
+%%
+
+mdK = squeeze(mean(abs(repmat(Kbar(:,1,:),1,17)-Kbar(:,2:end,:))));
+sdK = squeeze(std(abs(repmat(Kbar(:,1,:),1,17)-Kbar(:,2:end,:))));
+
+%%
+
+figure;
+
+errorbar(repmat(-(16:-1:0)',1,8),mdK,sdK);
+
+% set(gca,'XScale','log','YScale','log');
+
+xlabel('Noise exponent');
+ylabel('Difference (nats)');
+
+%%
+
+params = 1:4;
+M = repmat(params',1,4);
+N = repmat(params,4,1);
+
+Kgm = (M-N).^2/2;
+Kgs = (M.^2./N.^2-log(M.^2./N.^2)-1)/2;
+
+%%
+
+Kgmhat = zeros(10,7,16);
+Kgshat = zeros(10,7,16);
+
+for ii = 1:7
+    n = ns(ii);
+    
+    for jj = 1:10
+        for kk = 1:4
+            for ll = 1:4
+                tic;
+                idx = sub2ind([4 4],kk,ll);
+                
+                x = normrnd(params(kk),1,n,1);
+                y = normrnd(params(ll),1,n,1);
+                
+                Kgmhat(jj,ii,idx) = continuousKLDivergence(x,y,1,'b',false);
+                
+                x = normrnd(0,params(kk),n,1);
+                y = normrnd(0,params(ll),n,1);
+                
+                Kgshat(jj,ii,idx) = continuousKLDivergence(x,y,1,'b',false);
+                toc;
+            end
+        end
+    end
+end
+
+%%
+
+Kgm = repmat(reshape(Kgm,[1 1 16]),[10 7 1]);
+Kgs = repmat(reshape(Kgs,[1 1 16]),[10 7 1]);
+
+%%
+
+mdKgm = squeeze(mean(abs(Kgmhat-Kgm)));
+sdKgm = squeeze(std(abs(Kgmhat-Kgm)));
+mdKgs = squeeze(mean(abs(Kgshat-Kgs)));
+sdKgs = squeeze(std(abs(Kgshat-Kgs)));
+
+%%
+
+figure;
+hold on;
+
+errorbar(repmat(ns',1,16),mdKgm,sdKgm);
+errorbar(repmat(ns',1,16),mdKgs,sdKgs,'LineStyle','--');
+
+set(gca,'XScale','log');
+
+xlabel('# Samples');
+ylabel('Absolute Error (bits)');
+
+%%
+
+mpKgm = squeeze(mean(100*(abs(Kgmhat-Kgm))./Kgm));
+spKgm = squeeze(std(100*(abs(Kgmhat-Kgm))./Kgm));
+mpKgs = squeeze(mean(100*(abs(Kgshat-Kgs))./Kgs));
+spKgs = squeeze(std(100*(abs(Kgshat-Kgs))./Kgs));
+
+figure;
+hold on;
+
+errorbar(repmat(ns',1,16),mpKgm,spKgm);
+errorbar(repmat(ns',1,16),mpKgs,spKgs,'LineStyle','--');
+
+set(gca,'XScale','log');
+
+xlabel('# Samples');
+ylabel('% Error');
+
+%%
+
+% Kp = M.*log(M./N)-M+N;
+Kga = (M-N).*psi(M)-log(gamma(M))+log(gamma(N));
+Kgb = 2*(log(N)-log(M))+2*(M-N)./N;
+
+%%
+
+Kgahat = zeros(10,7,16);
+Kgbhat = zeros(10,7,16);
+
+for ii = 1:7
+    n = ns(ii);
+    
+    for jj = 1:10
+        for kk = 1:4
+            for ll = 1:4
+                tic;
+                idx = sub2ind([4 4],kk,ll);
+                
+                x = gamrnd(params(kk),2,n,1);
+                y = gamrnd(params(ll),2,n,1);
+                
+                Kgahat(jj,ii,idx) = continuousKLDivergence(x,y,1,'b',false);
+                
+                x = gamrnd(2,params(kk),n,1);
+                y = gamrnd(2,params(ll),n,1);
+                
+                Kgbhat(jj,ii,idx) = continuousKLDivergence(x,y,1,'b',false);
+                toc;
+            end
+        end
+    end
+end
+
+%%
+
+Kga = repmat(reshape(Kga,[1 1 16]),[10 7 1]);
+Kgb = repmat(reshape(Kgb,[1 1 16]),[10 7 1]);
+
+%%
+
+mdKgm = squeeze(mean(abs(Kgahat-Kga)));
+sdKgm = squeeze(std(abs(Kgahat-Kga)));
+mdKgs = squeeze(mean(abs(Kgbhat-Kgb)));
+sdKgs = squeeze(std(abs(Kgbhat-Kgb)));
+
+%%
+
+figure;
+hold on;
+
+errorbar(repmat(ns',1,16),mdKgm,sdKgm);
+errorbar(repmat(ns',1,16),mdKgs,sdKgs,'LineStyle','--');
+
+set(gca,'XScale','log');
+
+xlabel('# Samples');
+ylabel('Absolute Error (bits)');
+
+%%
+
+mpKgm = squeeze(mean(100*(abs(Kgahat-Kga))./Kga));
+spKgm = squeeze(std(100*(abs(Kgahat-Kga))./Kga));
+mpKgs = squeeze(mean(100*(abs(Kgbhat-Kgb))./Kgb));
+spKgs = squeeze(std(100*(abs(Kgbhat-Kgb))./Kgb));
+
+figure;
+hold on;
+
+errorbar(repmat(ns',1,16),mpKgm,spKgm);
+errorbar(repmat(ns',1,16),mpKgs,spKgs,'LineStyle','--');
+
+set(gca,'XScale','log');
+
+xlabel('# Samples');
+ylabel('% Error');
+

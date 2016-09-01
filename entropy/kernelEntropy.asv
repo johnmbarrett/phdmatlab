@@ -1,0 +1,10 @@
+function h = kernelEntropy(x)
+   w = 1;
+   n = numel(x);
+   
+   jj = randi(n);
+   
+   Ihat = @(w) -sum(plogp(sum(tpdf((x(setdiff(1:n,jj))-x(jj))/w))/((n-1)*w)))/n;
+   
+   options = optimset(optimset(@fmincon),'Algorithm','interior-point'
+end

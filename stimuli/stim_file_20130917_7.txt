@@ -1,0 +1,4320 @@
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\5.gif
+b 1925
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\M.gif
+b 1990
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\N.gif
+b 1900
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\R.gif
+b 1925
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\K.gif
+b 1925
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Z.gif
+b 1900
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\O.gif
+b 1950
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Q.gif
+b 1925
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\B.gif
+b 1995
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\W.gif
+b 1995
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\A.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\L.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\I.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\5.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\6.gif
+b 1995
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\D.gif
+b 1995
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\6.gif
+b 1925
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\P.gif
+b 1995
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\T.gif
+b 1995
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\X.gif
+b 1975
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\E.gif
+b 1995
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\A.gif
+b 1995
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\3.gif
+b 1990
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\U.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\7.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\B.gif
+b 1990
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\A.gif
+b 1925
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\5.gif
+b 1900
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\B.gif
+b 1950
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\U.gif
+b 1900
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\H.gif
+b 1900
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\W.gif
+b 1925
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\S.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\H.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\W.gif
+b 1950
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\E.gif
+b 1950
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\4.gif
+b 1990
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\1.gif
+b 1900
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\V.gif
+b 1950
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\C.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\F.gif
+b 1975
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\P.gif
+b 1990
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\S.gif
+b 1950
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\9.gif
+b 1925
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\U.gif
+b 1975
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\N.gif
+b 1975
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\6.gif
+b 1990
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\I.gif
+b 1995
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\K.gif
+b 1975
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\M.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\P.gif
+b 1975
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\0.gif
+b 1995
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\O.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\T.gif
+b 1900
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\5.gif
+b 1995
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\M.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\U.gif
+b 1925
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Y.gif
+b 1900
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\L.gif
+b 1925
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Q.gif
+b 1990
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\7.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\J.gif
+b 1900
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\6.gif
+b 1900
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\F.gif
+b 1900
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\X.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\T.gif
+b 1975
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\7.gif
+b 1950
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\I.gif
+b 1990
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\M.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\R.gif
+b 1900
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\8.gif
+b 1900
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\U.gif
+b 1950
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\S.gif
+b 1990
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\3.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\G.gif
+b 1900
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\G.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Y.gif
+b 1995
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\2.gif
+b 1990
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\U.gif
+b 1990
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\3.gif
+b 1925
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\V.gif
+b 1990
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Z.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\1.gif
+b 1925
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\X.gif
+b 1995
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Z.gif
+b 1995
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\D.gif
+b 1925
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\J.gif
+b 1995
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\2.gif
+b 1995
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\T.gif
+b 1950
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\1.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\1.gif
+b 1995
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Z.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\4.gif
+b 1975
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Q.gif
+b 1950
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\L.gif
+b 1900
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\I.gif
+b 1975
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\O.gif
+b 1975
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\B.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\V.gif
+b 1925
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Y.gif
+b 1990
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\J.gif
+b 1990
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\2.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\S.gif
+b 1925
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Y.gif
+b 1975
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\I.gif
+b 1950
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\8.gif
+b 1950
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\5.gif
+b 1990
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\O.gif
+b 1925
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Q.gif
+b 1995
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\T.gif
+b 1925
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\3.gif
+b 1900
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\6.gif
+b 1950
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\1.gif
+b 1990
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\N.gif
+b 1925
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\P.gif
+b 1925
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\F.gif
+b 1995
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\8.gif
+b 1995
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\0.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\S.gif
+b 1995
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\9.gif
+b 1995
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\D.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\R.gif
+b 1995
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\B.gif
+b 1925
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\C.gif
+b 1900
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\J.gif
+b 1975
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\H.gif
+b 1990
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Q.gif
+b 1975
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\C.gif
+b 1975
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\H.gif
+b 1995
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\7.gif
+b 1990
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\R.gif
+b 1975
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\W.gif
+b 1990
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Z.gif
+b 1990
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\E.gif
+b 1990
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\0.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\9.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\0.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Z.gif
+b 1925
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\8.gif
+b 1925
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\4.gif
+b 1900
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\S.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\T.gif
+b 1990
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\G.gif
+b 1995
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\4.gif
+b 1925
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\G.gif
+b 1925
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\5.gif
+b 1975
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\J.gif
+b 1950
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\R.gif
+b 1990
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\X.gif
+b 1900
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Y.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\N.gif
+b 1995
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\P.gif
+b 1950
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\X.gif
+b 1925
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\D.gif
+b 1990
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\0.gif
+b 1990
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\B.gif
+b 1900
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\H.gif
+b 1975
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\3.gif
+b 1950
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\9.gif
+b 1990
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\R.gif
+b 1950
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\X.gif
+b 1990
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\E.gif
+b 1900
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\G.gif
+b 1975
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\3.gif
+b 1975
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\L.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\6.gif
+b 1975
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\W.gif
+b 1900
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\V.gif
+b 1900
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\7.gif
+b 1925
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\K.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\2.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\L.gif
+b 1990
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\K.gif
+b 1990
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\F.gif
+b 1990
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Y.gif
+b 1925
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\A.gif
+b 1990
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\9.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\E.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\N.gif
+b 1950
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\O.gif
+b 1990
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\K.gif
+b 1950
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\I.gif
+b 1900
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\C.gif
+b 1925
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\4.gif
+b 1995
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\E.gif
+b 1975
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\M.gif
+b 1900
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\4.gif
+b 1950
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\C.gif
+b 1990
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\K.gif
+b 1900
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\V.gif
+b 1995
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\V.gif
+b 1975
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\F.gif
+b 1950
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\8.gif
+b 1990
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Q.gif
+b 1900
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\D.gif
+b 1900
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\2.gif
+b 1925
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\A.gif
+b 1975
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\O.gif
+b 1900
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\7.gif
+b 1975
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\9.gif
+b 1900
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\D.gif
+b 1975
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\2.gif
+b 1950
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\N.gif
+b 1990
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\M.gif
+b 1925
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\8.gif
+b 1975
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\H.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\C.gif
+b 1995
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\1.gif
+b 1975
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\L.gif
+b 1995
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\G.gif
+b 1990
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\F.gif
+b 1925
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\W.gif
+b 1975
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\P.gif
+b 1900
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\0.gif
+b 1900
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\A.gif
+b 1900
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\J.gif
+b 1925
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\J.gif
+b 1900
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\O.gif
+b 1900
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\L.gif
+b 1900
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Z.gif
+b 1975
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\J.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\R.gif
+b 1900
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\B.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\W.gif
+b 1925
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\H.gif
+b 1975
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\O.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\I.gif
+b 1995
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\D.gif
+b 1995
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\N.gif
+b 1990
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\5.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\0.gif
+b 1990
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\H.gif
+b 1925
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\T.gif
+b 1975
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\4.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\W.gif
+b 1900
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\M.gif
+b 1925
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\U.gif
+b 1925
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\T.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\P.gif
+b 1950
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\U.gif
+b 1900
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\S.gif
+b 1925
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\O.gif
+b 1995
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\6.gif
+b 1995
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\G.gif
+b 1990
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\M.gif
+b 1995
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\W.gif
+b 1990
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\N.gif
+b 1950
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\6.gif
+b 1900
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\8.gif
+b 1975
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\2.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\K.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Z.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\A.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\3.gif
+b 1900
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\I.gif
+b 1950
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\I.gif
+b 1990
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Q.gif
+b 1925
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\U.gif
+b 1995
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\G.gif
+b 1975
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\D.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\J.gif
+b 1990
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\0.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\V.gif
+b 1995
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\O.gif
+b 1975
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\H.gif
+b 1995
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\L.gif
+b 1995
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\9.gif
+b 1990
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Q.gif
+b 1975
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\F.gif
+b 1995
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\V.gif
+b 1925
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\9.gif
+b 1995
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\3.gif
+b 1975
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\D.gif
+b 1990
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\0.gif
+b 1900
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\R.gif
+b 1950
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\5.gif
+b 1925
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\0.gif
+b 1975
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Y.gif
+b 1975
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\W.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\I.gif
+b 1900
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\P.gif
+b 1975
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\6.gif
+b 1990
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\8.gif
+b 1950
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\N.gif
+b 1925
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\L.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\T.gif
+b 1950
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\B.gif
+b 1925
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Y.gif
+b 1925
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\1.gif
+b 1975
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\C.gif
+b 1995
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\K.gif
+b 1975
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\U.gif
+b 1950
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\7.gif
+b 1950
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\V.gif
+b 1990
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\N.gif
+b 1995
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\B.gif
+b 1995
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\K.gif
+b 1990
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\1.gif
+b 1995
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\O.gif
+b 1925
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\2.gif
+b 1900
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\7.gif
+b 1975
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\W.gif
+b 1950
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Z.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\L.gif
+b 1950
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\M.gif
+b 1950
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\3.gif
+b 1950
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\C.gif
+b 1990
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\G.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Y.gif
+b 1900
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\3.gif
+b 1995
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\0.gif
+b 1995
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\T.gif
+b 1990
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\B.gif
+b 1900
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\E.gif
+b 1995
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\S.gif
+b 1950
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Q.gif
+b 1990
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\7.gif
+b 1900
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\F.gif
+b 1900
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\N.gif
+b 1900
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\2.gif
+b 1925
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\M.gif
+b 1990
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\3.gif
+b 1925
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Z.gif
+b 1900
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\I.gif
+b 1925
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\9.gif
+b 1975
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Y.gif
+b 1995
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\E.gif
+b 1950
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\4.gif
+b 1900
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\K.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\W.gif
+b 1975
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Q.gif
+b 1900
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\9.gif
+b 1900
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\4.gif
+b 1925
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\S.gif
+b 1975
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\S.gif
+b 1990
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\F.gif
+b 1925
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\K.gif
+b 1900
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\E.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\R.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\A.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\5.gif
+b 1995
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\1.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\5.gif
+b 1975
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\M.gif
+b 1975
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\5.gif
+b 1990
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\T.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\C.gif
+b 1900
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\V.gif
+b 1950
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\S.gif
+b 1900
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\J.gif
+b 1925
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Z.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\X.gif
+b 1900
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\6.gif
+b 1975
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\F.gif
+b 1975
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\V.gif
+b 1900
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\7.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\G.gif
+b 1950
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\4.gif
+b 1990
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\H.gif
+b 1950
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\C.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\2.gif
+b 1950
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\1.gif
+b 1925
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\I.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\P.gif
+b 1925
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\B.gif
+b 1990
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\6.gif
+b 1950
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\9.gif
+b 1950
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\8.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\5.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\U.gif
+b 1975
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\F.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\L.gif
+b 1975
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\8.gif
+b 1900
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\7.gif
+b 1995
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\R.gif
+b 1990
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\0.gif
+b 1925
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\A.gif
+b 1925
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\R.gif
+b 1975
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\1.gif
+b 1900
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\S.gif
+b 1995
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\8.gif
+b 1990
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\4.gif
+b 1975
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\3.gif
+b 1990
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\4.gif
+b 1950
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\T.gif
+b 1900
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Q.gif
+b 1950
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\O.gif
+b 1990
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\2.gif
+b 1990
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\G.gif
+b 1900
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\D.gif
+b 1925
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\A.gif
+b 1975
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\H.gif
+b 1990
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\P.gif
+b 1990
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\N.gif
+b 1975
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\C.gif
+b 1975
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\8.gif
+b 1995
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\X.gif
+b 1975
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\J.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\R.gif
+b 1995
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\F.gif
+b 1990
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\E.gif
+b 1900
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\K.gif
+b 1995
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\P.gif
+b 1995
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Z.gif
+b 1990
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\E.gif
+b 1990
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\X.gif
+b 1925
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\U.gif
+b 1990
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\G.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\X.gif
+b 1950
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\A.gif
+b 1990
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\P.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Y.gif
+b 1990
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\H.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\1.gif
+b 1990
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Y.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\V.gif
+b 1975
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\D.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\D.gif
+b 1975
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\X.gif
+b 1990
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\6.gif
+b 1925
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\M.gif
+b 1900
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Q.gif
+b 1995
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\9.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\B.gif
+b 1950
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\L.gif
+b 1990
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\A.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\7.gif
+b 1990
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\J.gif
+b 1975
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\X.gif
+b 1995
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\C.gif
+b 1950
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\E.gif
+b 1925
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\2.gif
+b 1995
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\2.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\N.gif
+b 1900
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\9.gif
+b 1995
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\U.gif
+b 1975
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\W.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\M.gif
+b 1925
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\H.gif
+b 1990
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\A.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Z.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\S.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\I.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Q.gif
+b 1990
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\4.gif
+b 1990
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\4.gif
+b 1900
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\0.gif
+b 1925
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\J.gif
+b 1975
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Q.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Z.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\E.gif
+b 1990
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\S.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Z.gif
+b 1995
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\6.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\H.gif
+b 1975
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\R.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\X.gif
+b 1990
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\G.gif
+b 1950
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Y.gif
+b 1990
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\N.gif
+b 1995
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\E.gif
+b 1950
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\O.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\A.gif
+b 1990
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\X.gif
+b 1975
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\D.gif
+b 1900
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\0.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\I.gif
+b 1995
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\R.gif
+b 1995
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\U.gif
+b 1990
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\7.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\3.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\G.gif
+b 1975
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\F.gif
+b 1975
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\J.gif
+b 1990
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\5.gif
+b 1925
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\U.gif
+b 1900
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\9.gif
+b 1925
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\8.gif
+b 1995
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\O.gif
+b 1975
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\5.gif
+b 1900
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\O.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\F.gif
+b 1900
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\9.gif
+b 1950
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Y.gif
+b 1950
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\1.gif
+b 1990
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Q.gif
+b 1950
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\K.gif
+b 1950
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Y.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\W.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\5.gif
+b 1975
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\V.gif
+b 1950
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\6.gif
+b 1925
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\V.gif
+b 1990
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\V.gif
+b 1995
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\K.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\O.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\P.gif
+b 1975
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\5.gif
+b 1995
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\2.gif
+b 1925
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\G.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\6.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\0.gif
+b 1990
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\I.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\W.gif
+b 1925
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\V.gif
+b 1925
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\E.gif
+b 1925
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\2.gif
+b 1990
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\C.gif
+b 1975
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\J.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\3.gif
+b 1995
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\6.gif
+b 1995
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\O.gif
+b 1925
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\3.gif
+b 1990
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\S.gif
+b 1990
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\N.gif
+b 1990
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\T.gif
+b 1900
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\1.gif
+b 1925
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Q.gif
+b 1900
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\D.gif
+b 1925
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\2.gif
+b 1975
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\M.gif
+b 1900
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\L.gif
+b 1995
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\N.gif
+b 1925
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\E.gif
+b 1900
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\3.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\J.gif
+b 1925
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\C.gif
+b 1995
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\L.gif
+b 1975
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\7.gif
+b 1900
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\M.gif
+b 1975
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\H.gif
+b 1995
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\W.gif
+b 1990
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\3.gif
+b 1925
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\H.gif
+b 1925
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\A.gif
+b 1995
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\R.gif
+b 1990
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\L.gif
+b 1950
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\H.gif
+b 1950
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\I.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\9.gif
+b 1975
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\G.gif
+b 1990
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\B.gif
+b 1990
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\T.gif
+b 1950
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\H.gif
+b 1900
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\M.gif
+b 1950
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\S.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\8.gif
+b 1990
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\K.gif
+b 1995
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\L.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\A.gif
+b 1950
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\9.gif
+b 1990
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\R.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\C.gif
+b 1925
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\K.gif
+b 1975
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\L.gif
+b 1900
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\B.gif
+b 1995
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\T.gif
+b 1990
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\D.gif
+b 1950
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\P.gif
+b 1900
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\D.gif
+b 1995
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\F.gif
+b 1950
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\J.gif
+b 1900
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\X.gif
+b 1995
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\J.gif
+b 1995
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\I.gif
+b 1925
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\5.gif
+b 1990
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\4.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\T.gif
+b 1925
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\A.gif
+b 1900
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\G.gif
+b 1925
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\A.gif
+b 1975
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\R.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\V.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Z.gif
+b 1925
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\0.gif
+b 1995
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\7.gif
+b 1995
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\1.gif
+b 1995
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\8.gif
+b 1925
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\E.gif
+b 1975
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Z.gif
+b 1990
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\7.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\F.gif
+b 1925
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\T.gif
+b 1995
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\F.gif
+b 1995
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\N.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\B.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\B.gif
+b 1925
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\6.gif
+b 1975
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\C.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\F.gif
+b 1990
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Q.gif
+b 1975
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\W.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\3.gif
+b 1900
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\D.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Q.gif
+b 1925
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\O.gif
+b 1990
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\U.gif
+b 1925
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\4.gif
+b 1925
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\S.gif
+b 1975
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\8.gif
+b 1975
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\K.gif
+b 1990
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\B.gif
+b 1900
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\P.gif
+b 1995
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\X.gif
+b 1950
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\L.gif
+b 1990
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\9.gif
+b 1900
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\T.gif
+b 1975
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Z.gif
+b 1975
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\K.gif
+b 1900
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Y.gif
+b 1900
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\C.gif
+b 1950
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\2.gif
+b 1950
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\U.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\M.gif
+b 1995
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Y.gif
+b 1975
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\V.gif
+b 1900
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\P.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\4.gif
+b 1995
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Y.gif
+b 1995
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\U.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\8.gif
+b 1900
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\1.gif
+b 1975
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\E.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\0.gif
+b 1900
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\S.gif
+b 1925
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\X.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\B.gif
+b 1950
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\P.gif
+b 1990
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\N.gif
+b 1975
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\X.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\7.gif
+b 1990
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\R.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\1.gif
+b 1950
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\4.gif
+b 1950
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\8.gif
+b 1950
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\5.gif
+b 1950
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\7.gif
+b 1950
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\G.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\C.gif
+b 1990
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\2.gif
+b 1900
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\P.gif
+b 1925
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\W.gif
+b 1900
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\0.gif
+b 1975
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\I.gif
+b 1990
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\6.gif
+b 1990
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\D.gif
+b 1990
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\1.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\M.gif
+b 1990
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\O.gif
+b 1995
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\G.gif
+b 1950
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\T.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\4.gif
+b 1950
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\C.gif
+b 1990
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\V.gif
+b 1900
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\4.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\X.gif
+b 1900
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\7.gif
+b 1995
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\1.gif
+b 1990
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\W.gif
+b 1975
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\M.gif
+b 1995
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\5.gif
+b 1975
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\9.gif
+b 1975
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\K.gif
+b 1990
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\K.gif
+b 1900
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\C.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\V.gif
+b 1950
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\J.gif
+b 1950
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\2.gif
+b 1925
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\A.gif
+b 1995
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\R.gif
+b 1975
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\K.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\1.gif
+b 1900
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\R.gif
+b 1925
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\U.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\A.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\C.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\L.gif
+b 1995
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Y.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\I.gif
+b 1900
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\M.gif
+b 1925
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\L.gif
+b 1990
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Y.gif
+b 1975
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\S.gif
+b 1950
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\7.gif
+b 1900
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\6.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\X.gif
+b 1995
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\6.gif
+b 1975
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\A.gif
+b 1975
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\4.gif
+b 1990
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\A.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\A.gif
+b 1990
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\H.gif
+b 1990
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\F.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\I.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\S.gif
+b 1995
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\N.gif
+b 1975
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\5.gif
+b 1990
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\H.gif
+b 1975
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\P.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\U.gif
+b 1900
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\D.gif
+b 1925
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\D.gif
+b 1900
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\P.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\O.gif
+b 1975
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\9.gif
+b 1950
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\H.gif
+b 1925
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\H.gif
+b 1900
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\2.gif
+b 1995
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\O.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\0.gif
+b 1975
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\B.gif
+b 1975
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\1.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\W.gif
+b 1900
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\5.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\T.gif
+b 1995
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\G.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\N.gif
+b 1900
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\8.gif
+b 1900
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\4.gif
+b 1975
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\F.gif
+b 1995
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\L.gif
+b 1950
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\R.gif
+b 1950
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\L.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\8.gif
+b 1950
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\B.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\I.gif
+b 1990
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\0.gif
+b 1900
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\2.gif
+b 1975
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\X.gif
+b 1990
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\0.gif
+b 1950
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\F.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\8.gif
+b 1975
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Z.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\K.gif
+b 1925
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\1.gif
+b 1925
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\G.gif
+b 1990
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\X.gif
+b 1950
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\O.gif
+b 1900
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\5.gif
+b 1925
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\4.gif
+b 1900
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\8.gif
+b 1925
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\7.gif
+b 1925
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\U.gif
+b 1925
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\8.gif
+b 1995
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\N.gif
+b 1950
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\W.gif
+b 1990
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Q.gif
+b 1950
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\R.gif
+b 1990
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\R.gif
+b 1900
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\3.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\2.gif
+b 1900
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Z.gif
+b 1995
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\U.gif
+b 1990
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\J.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\0.gif
+b 1925
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Z.gif
+b 1925
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Q.gif
+b 1990
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Q.gif
+b 1995
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\A.gif
+b 1950
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\E.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\N.gif
+b 1995
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\B.gif
+b 1950
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\3.gif
+b 1990
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\P.gif
+b 1925
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\E.gif
+b 1975
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\C.gif
+b 1975
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\H.gif
+b 1995
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\7.gif
+b 1990
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\S.gif
+b 1990
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\4.gif
+b 1925
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Y.gif
+b 1925
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\P.gif
+b 1900
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\9.gif
+b 1900
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\E.gif
+b 1995
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\G.gif
+b 1925
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\I.gif
+b 1925
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\W.gif
+b 1925
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\3.gif
+b 1925
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\C.gif
+b 1995
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\9.gif
+b 1925
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\C.gif
+b 1900
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\X.gif
+b 1925
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\7.gif
+b 1975
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\2.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\G.gif
+b 1975
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\F.gif
+b 1975
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\6.gif
+b 1900
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\R.gif
+b 1995
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\K.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\I.gif
+b 1975
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\T.gif
+b 1900
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\U.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\G.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\T.gif
+b 1990
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\D.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\K.gif
+b 1975
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\B.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\5.gif
+b 1900
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\0.gif
+b 1995
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\9.gif
+b 1995
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\X.gif
+b 1975
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\M.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\O.gif
+b 1990
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\V.gif
+b 1975
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\D.gif
+b 1990
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\7.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\V.gif
+b 1995
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\P.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\N.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Y.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\1.gif
+b 1975
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\M.gif
+b 1990
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\T.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\E.gif
+b 1925
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\9.gif
+b 1990
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\B.gif
+b 1990
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\H.gif
+b 1950
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\T.gif
+b 1950
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\V.gif
+b 1925
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Q.gif
+b 1975
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\1.gif
+b 1950
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\P.gif
+b 1990
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\D.gif
+b 1995
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\L.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\S.gif
+b 1925
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\J.gif
+b 1995
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\0.gif
+b 1990
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\3.gif
+b 1975
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Q.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\E.gif
+b 1990
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\F.gif
+b 1900
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\5.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Y.gif
+b 1900
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\O.gif
+b 1925
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Q.gif
+b 1925
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\D.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\J.gif
+b 1925
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\I.gif
+b 1995
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\U.gif
+b 1950
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\W.gif
+b 1950
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\L.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\V.gif
+b 1990
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\6.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Z.gif
+b 1950
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\E.gif
+b 1900
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\S.gif
+b 1900
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\3.gif
+b 1950
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\N.gif
+b 1990
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Y.gif
+b 1990
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\W.gif
+b 1995
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Z.gif
+b 1990
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\J.gif
+b 1990
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\3.gif
+b 1900
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\M.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\M.gif
+b 1975
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\2.gif
+b 1990
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\6.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Z.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\6.gif
+b 1990
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\8.gif
+b 1990
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\F.gif
+b 1990
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\B.gif
+b 1925
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\J.gif
+b 1900
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\S.gif
+b 1975
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\G.gif
+b 1900
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\K.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Q.gif
+b 1990
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\O.gif
+b 1975
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\6.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\1.gif
+b 1990
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\S.gif
+b 1950
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\3.gif
+b 1925
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\3.gif
+b 1990
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\N.gif
+b 1990
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\M.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\1.gif
+b 1925
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\P.gif
+b 1900
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\X.gif
+b 1900
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\U.gif
+b 1950
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\5.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Z.gif
+b 1990
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\C.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\6.gif
+b 1990
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\K.gif
+b 1990
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\O.gif
+b 1990
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\P.gif
+b 1950
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\D.gif
+b 1990
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\7.gif
+b 1995
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\V.gif
+b 1975
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\S.gif
+b 1900
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\C.gif
+b 1950
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\M.gif
+b 1900
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\M.gif
+b 1950
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\I.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\S.gif
+b 1975
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\S.gif
+b 1990
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\4.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\9.gif
+b 1975
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\V.gif
+b 1995
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Q.gif
+b 1975
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\C.gif
+b 1975
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Z.gif
+b 1995
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\7.gif
+b 1990
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\X.gif
+b 1975
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\N.gif
+b 1900
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\0.gif
+b 1995
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\4.gif
+b 1925
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\W.gif
+b 1975
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\P.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\3.gif
+b 1900
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\2.gif
+b 1900
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\O.gif
+b 1995
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\R.gif
+b 1995
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\7.gif
+b 1975
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\V.gif
+b 1990
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\0.gif
+b 1950
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\A.gif
+b 1950
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Y.gif
+b 1990
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\T.gif
+b 1975
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\F.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\R.gif
+b 1975
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\J.gif
+b 1990
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\L.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\T.gif
+b 1900
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\O.gif
+b 1900
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\D.gif
+b 1995
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Z.gif
+b 1925
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\W.gif
+b 1925
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\B.gif
+b 1995
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\S.gif
+b 1995
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\I.gif
+b 1975
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\B.gif
+b 1950
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\0.gif
+b 1990
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\R.gif
+b 1990
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\7.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\I.gif
+b 1995
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\6.gif
+b 1975
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\6.gif
+b 1950
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\7.gif
+b 1900
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\2.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\J.gif
+b 1995
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Z.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\L.gif
+b 1975
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\X.gif
+b 1990
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\F.gif
+b 1995
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\D.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\O.gif
+b 1925
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\A.gif
+b 1975
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\W.gif
+b 1990
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\8.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\2.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Y.gif
+b 1950
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\5.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\3.gif
+b 1975
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\B.gif
+b 1990
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\4.gif
+b 1975
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\G.gif
+b 1995
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\5.gif
+b 1990
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\H.gif
+b 1995
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\8.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\3.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\9.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\I.gif
+b 1900
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\G.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\A.gif
+b 1995
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\G.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\D.gif
+b 1925
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\C.gif
+b 1990
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\W.gif
+b 1950
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\1.gif
+b 1950
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\X.gif
+b 1925
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Y.gif
+b 1995
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Z.gif
+b 1975
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\T.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\J.gif
+b 1975
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\X.gif
+b 1995
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\6.gif
+b 1925
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\0.gif
+b 1900
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\E.gif
+b 1995
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\0.gif
+b 1925
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\K.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\R.gif
+b 1900
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\H.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\E.gif
+b 1990
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\9.gif
+b 1900
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\R.gif
+b 1925
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\C.gif
+b 1995
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\H.gif
+b 1990
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\V.gif
+b 1950
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\H.gif
+b 1925
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\T.gif
+b 1995
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\9.gif
+b 1925
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\K.gif
+b 1925
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\2.gif
+b 1990
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\8.gif
+b 1950
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\A.gif
+b 1990
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\1.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\D.gif
+b 1900
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\L.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\I.gif
+b 1990
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\T.gif
+b 1925
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\F.gif
+b 1990
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Y.gif
+b 1975
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\1.gif
+b 1975
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\V.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\U.gif
+b 1990
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Q.gif
+b 1900
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\A.gif
+b 1925
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\E.gif
+b 1900
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\D.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\0.gif
+b 1975
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\4.gif
+b 1990
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Y.gif
+b 1925
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\9.gif
+b 1990
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\H.gif
+b 1950
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\U.gif
+b 1925
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\U.gif
+b 1900
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\5.gif
+b 1995
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\S.gif
+b 1925
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\2.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\J.gif
+b 1925
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Q.gif
+b 1925
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\6.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\J.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\M.gif
+b 1990
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\8.gif
+b 1990
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\M.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\X.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\8.gif
+b 1995
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\W.gif
+b 1995
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\E.gif
+b 1950
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\9.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\3.gif
+b 1995
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\H.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\L.gif
+b 1925
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\G.gif
+b 1925
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\F.gif
+b 1900
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\R.gif
+b 1950
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\8.gif
+b 1900
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\I.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\K.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\E.gif
+b 1975
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\L.gif
+b 1990
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\C.gif
+b 1925
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\A.gif
+b 1900
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\B.gif
+b 1975
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\L.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\4.gif
+b 1995
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\K.gif
+b 1975
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\U.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\P.gif
+b 1925
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\E.gif
+b 1925
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\5.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\5.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Q.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\F.gif
+b 1975
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\2.gif
+b 1995
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\P.gif
+b 1990
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\P.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\7.gif
+b 1925
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\F.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\J.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Q.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Z.gif
+b 1900
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\W.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\T.gif
+b 1990
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\O.gif
+b 1950
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\B.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\G.gif
+b 1990
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\M.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\1.gif
+b 1900
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\N.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\V.gif
+b 1925
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\N.gif
+b 1925
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\B.gif
+b 1925
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Y.gif
+b 1900
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\4.gif
+b 1900
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\N.gif
+b 1995
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\U.gif
+b 1995
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\N.gif
+b 1950
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\E.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\9.gif
+b 1950
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\K.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\B.gif
+b 1975
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\E.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\L.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\N.gif
+b 1950
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\V.gif
+b 1950
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\1.gif
+b 1990
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\P.gif
+b 1950
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\1.gif
+b 1900
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\J.gif
+b 1975
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\V.gif
+b 1975
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\1.gif
+b 1975
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\J.gif
+b 1995
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\0.gif
+b 1995
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Z.gif
+b 1975
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\W.gif
+b 1990
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\3.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\V.gif
+b 1995
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\7.gif
+b 1975
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\1.gif
+b 1995
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\4.gif
+b 1995
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\P.gif
+b 1975
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\G.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\C.gif
+b 1990
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\K.gif
+b 1990
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\R.gif
+b 1975
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\8.gif
+b 1990
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\5.gif
+b 1950
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\3.gif
+b 1925
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\4.gif
+b 1975
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\4.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\8.gif
+b 1975
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\M.gif
+b 1900
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\I.gif
+b 1950
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\P.gif
+b 1900
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Q.gif
+b 1995
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\N.gif
+b 1990
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Q.gif
+b 1990
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\J.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\P.gif
+b 1990
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\D.gif
+b 1975
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\E.gif
+b 1990
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\S.gif
+b 1990
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\G.gif
+b 1990
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\A.gif
+b 1900
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\B.gif
+b 1900
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Z.gif
+b 1995
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\H.gif
+b 1995
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\S.gif
+b 1950
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\V.gif
+b 1900
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\W.gif
+b 1900
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\8.gif
+b 1925
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\R.gif
+b 1900
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\5.gif
+b 1975
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\T.gif
+b 1975
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\3.gif
+b 1990
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\T.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Z.gif
+b 1990
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\9.gif
+b 1995
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\R.gif
+b 1925
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\T.gif
+b 1995
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\W.gif
+b 1950
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\V.gif
+b 1925
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\4.gif
+b 1900
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\2.gif
+b 1995
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\F.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Y.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\U.gif
+b 1975
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\9.gif
+b 1975
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\D.gif
+b 1990
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\M.gif
+b 1925
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\2.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\R.gif
+b 1950
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\N.gif
+b 1900
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\O.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\T.gif
+b 1950
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\H.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\E.gif
+b 1950
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\W.gif
+b 1925
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\U.gif
+b 1900
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\F.gif
+b 1975
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\T.gif
+b 1990
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\D.gif
+b 1995
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Z.gif
+b 1950
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\9.gif
+b 1990
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\P.gif
+b 1995
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Q.gif
+b 1975
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\7.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\J.gif
+b 1990
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\A.gif
+b 1995
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\L.gif
+b 1975
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\E.gif
+b 1995
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\R.gif
+b 1990
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\6.gif
+b 1995
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\4.gif
+b 1925
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\N.gif
+b 1975
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\U.gif
+b 1995
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\U.gif
+b 1950
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\U.gif
+b 1990
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\F.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Y.gif
+b 1995
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\K.gif
+b 1995
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\K.gif
+b 1925
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\K.gif
+b 1900
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\X.gif
+b 1925
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\O.gif
+b 1995
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\A.gif
+b 1925
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\8.gif
+b 1995
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\L.gif
+b 1950
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\J.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\0.gif
+b 1975
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\0.gif
+b 1990
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\H.gif
+b 1900
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\0.gif
+b 1950
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Q.gif
+b 1950
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\O.gif
+b 1990
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\6.gif
+b 1900
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\X.gif
+b 1975
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\F.gif
+b 1995
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\0.gif
+b 1925
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\7.gif
+b 1990
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\S.gif
+b 1900
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\L.gif
+b 1995
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\6.gif
+b 1990
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\N.gif
+b 1995
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Z.gif
+b 1925
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\I.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\H.gif
+b 1950
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\E.gif
+b 1900
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\C.gif
+b 1900
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\B.gif
+b 1950
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\O.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Y.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\T.gif
+b 1925
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\8.gif
+b 1900
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\X.gif
+b 1900
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\1.gif
+b 1925
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\L.gif
+b 1900
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\O.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\X.gif
+b 1990
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\G.gif
+b 1975
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\3.gif
+b 1900
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\J.gif
+b 1925
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\C.gif
+b 1975
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\B.gif
+b 1990
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\7.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\1.gif
+b 1950
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\V.gif
+b 1990
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\5.gif
+b 1925
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\S.gif
+b 1995
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\M.gif
+b 1990
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\S.gif
+b 1925
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\M.gif
+b 1995
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\5.gif
+b 1990
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\3.gif
+b 1995
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\9.gif
+b 1925
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\G.gif
+b 1995
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\2.gif
+b 1975
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Z.gif
+b 1900
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\D.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\A.gif
+b 1950
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\H.gif
+b 1990
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\O.gif
+b 1975
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\G.gif
+b 1950
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\U.gif
+b 1925
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\2.gif
+b 1990
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\D.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\3.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\P.gif
+b 1925
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\5.gif
+b 1995
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\B.gif
+b 1995
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\X.gif
+b 1995
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\L.gif
+b 1990
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\6.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\C.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\I.gif
+b 1900
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\F.gif
+b 1900
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\S.gif
+b 1975
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\A.gif
+b 1990
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\5.gif
+b 1900
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\M.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\A.gif
+b 1975
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\9.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\4.gif
+b 1990
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\0.gif
+b 1900
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\C.gif
+b 1925
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Y.gif
+b 1990
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Y.gif
+b 1925
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\I.gif
+b 1975
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\D.gif
+b 1900
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\H.gif
+b 1975
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\I.gif
+b 1995
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\X.gif
+b 1950
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Y.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\I.gif
+b 1990
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\2.gif
+b 1950
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\6.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\8.gif
+b 1950
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\2.gif
+b 1900
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Q.gif
+b 1925
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\7.gif
+b 1995
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\R.gif
+b 1995
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\W.gif
+b 1975
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\F.gif
+b 1990
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Q.gif
+b 1900
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\7.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\6.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\N.gif
+b 1925
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\B.gif
+b 1925
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\G.gif
+b 1925
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\K.gif
+b 1975
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\M.gif
+b 1975
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\W.gif
+b 1995
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\C.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\2.gif
+b 1975
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\2.gif
+b 1990
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\0.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\1.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\F.gif
+b 1975
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\C.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\6.gif
+b 1975
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\E.gif
+b 1995
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\U.gif
+b 1975
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\9.gif
+b 1975
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\3.gif
+b 1950
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\2.gif
+b 1900
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\B.gif
+b 1925
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\J.gif
+b 1990
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\F.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Z.gif
+b 1900
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\F.gif
+b 1950
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\X.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\X.gif
+b 1990
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\5.gif
+b 1950
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\X.gif
+b 1950
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\W.gif
+b 1990
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\1.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\O.gif
+b 1950
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Z.gif
+b 1990
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\G.gif
+b 1990
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\V.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\7.gif
+b 1975
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\4.gif
+b 1995
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\5.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\B.gif
+b 1900
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\3.gif
+b 1975
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\K.gif
+b 1990
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\O.gif
+b 1990
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\E.gif
+b 1950
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Q.gif
+b 1990
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\F.gif
+b 1900
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\R.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\5.gif
+b 1990
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\T.gif
+b 1975
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\3.gif
+b 1995
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\L.gif
+b 1990
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\S.gif
+b 1975
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\D.gif
+b 1900
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\M.gif
+b 1900
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Q.gif
+b 1975
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\W.gif
+b 1975
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\D.gif
+b 1995
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\H.gif
+b 1925
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\J.gif
+b 1995
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\5.gif
+b 1925
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\K.gif
+b 1995
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\L.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\P.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\O.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\6.gif
+b 1990
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\3.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\I.gif
+b 1990
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\O.gif
+b 1925
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\I.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\U.gif
+b 1950
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Q.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\I.gif
+b 1950
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\P.gif
+b 1900
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\V.gif
+b 1925
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Z.gif
+b 1925
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\L.gif
+b 1925
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\2.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\C.gif
+b 1900
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\8.gif
+b 1925
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Z.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\E.gif
+b 1925
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\V.gif
+b 1990
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\7.gif
+b 1900
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\K.gif
+b 1925
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\W.gif
+b 1900
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Y.gif
+b 1975
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\G.gif
+b 1900
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\0.gif
+b 1995
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\7.gif
+b 1995
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\M.gif
+b 1950
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\9.gif
+b 1950
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\J.gif
+b 1900
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Z.gif
+b 1950
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\N.gif
+b 1925
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\4.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\4.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\8.gif
+b 1950
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\J.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\D.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\U.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\0.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\3.gif
+b 1990
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Y.gif
+b 1925
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\U.gif
+b 1990
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\M.gif
+b 1925
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\U.gif
+b 1925
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\X.gif
+b 1925
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\E.gif
+b 1900
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\V.gif
+b 1975
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\H.gif
+b 1950
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\0.gif
+b 1990
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\8.gif
+b 1975
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\R.gif
+b 1990
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\R.gif
+b 1950
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\L.gif
+b 1900
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\B.gif
+b 1975
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\S.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\V.gif
+b 1995
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\A.gif
+b 1925
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\O.gif
+b 1975
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Z.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\1.gif
+b 1900
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\9.gif
+b 1925
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\8.gif
+b 1995
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\B.gif
+b 1995
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\0.gif
+b 1975
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\X.gif
+b 1975
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\L.gif
+b 1975
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\H.gif
+b 1975
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\R.gif
+b 1975
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\L.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\5.gif
+b 1900
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\M.gif
+b 1995
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\6.gif
+b 1950
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\D.gif
+b 1990
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\C.gif
+b 1925
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\9.gif
+b 1990
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\N.gif
+b 1900
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\6.gif
+b 1925
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\E.gif
+b 1990
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\I.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\C.gif
+b 1990
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\I.gif
+b 1995
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\8.gif
+b 1990
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\H.gif
+b 1900
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\T.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\W.gif
+b 1995
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Y.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\5.gif
+b 1975
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\W.gif
+b 1950
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\T.gif
+b 1925
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\D.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\2.gif
+b 1925
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\4.gif
+b 1900
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\3.gif
+b 1925
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\P.gif
+b 1975
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\8.gif
+b 1900
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Q.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\9.gif
+b 1995
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\I.gif
+b 1975
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\P.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\1.gif
+b 1995
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\G.gif
+b 1975
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\7.gif
+b 1990
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\7.gif
+b 1950
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Q.gif
+b 1900
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\1.gif
+b 1975
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\N.gif
+b 1975
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\A.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\7.gif
+b 1925
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\S.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\2.gif
+b 1950
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\V.gif
+b 1900
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Q.gif
+b 1995
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\R.gif
+b 1995
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\H.gif
+b 1995
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\P.gif
+b 1990
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\N.gif
+b 1990
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\X.gif
+b 1995
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\A.gif
+b 1995
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\J.gif
+b 1975
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\E.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\W.gif
+b 1925
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\S.gif
+b 1995
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\0.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\G.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\A.gif
+b 1900
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\K.gif
+b 1900
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\6.gif
+b 1995
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\F.gif
+b 1990
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\C.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\T.gif
+b 1900
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Y.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\4.gif
+b 1990
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\9.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\H.gif
+b 1990
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Y.gif
+b 1995
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\O.gif
+b 1995
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\N.gif
+b 1995
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Y.gif
+b 1990
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\M.gif
+b 1990
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\B.gif
+b 1990
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\1.gif
+b 1990
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\A.gif
+b 1990
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\P.gif
+b 1925
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\S.gif
+b 1990
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\K.gif
+b 1975
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\J.gif
+b 1950
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\R.gif
+b 1925
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\C.gif
+b 1975
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\B.gif
+b 1950
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\G.gif
+b 1925
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\S.gif
+b 1900
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\D.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\N.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\T.gif
+b 1995
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\F.gif
+b 1925
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\T.gif
+b 1990
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\M.gif
+b 1975
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\K.gif
+b 1950
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\A.gif
+b 1950
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\6.gif
+b 1900
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\U.gif
+b 1900
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\G.gif
+b 1950
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\4.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\L.gif
+b 1995
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\2.gif
+b 1925
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\0.gif
+b 1975
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\6.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\H.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\D.gif
+b 1950
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\L.gif
+b 1990
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Z.gif
+b 1995
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Y.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\N.gif
+b 1975
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\7.gif
+b 1990
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\9.gif
+b 1900
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\L.gif
+b 1950
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\U.gif
+b 1925
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\9.gif
+b 1925
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\K.gif
+b 1925
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\0.gif
+b 1995
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\R.gif
+b 1975
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\W.gif
+b 1975
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\H.gif
+b 1950
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\4.gif
+b 1990
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\7.gif
+b 1995
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\J.gif
+b 1990
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Z.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\A.gif
+b 1995
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\G.gif
+b 1950
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Z.gif
+b 1900
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\2.gif
+b 1975
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\2.gif
+b 1990
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\D.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\3.gif
+b 1950
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Q.gif
+b 1900
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\H.gif
+b 1995
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\3.gif
+b 1990
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\6.gif
+b 1900
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\I.gif
+b 1995
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\D.gif
+b 1975
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\8.gif
+b 1900
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\B.gif
+b 1925
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\O.gif
+b 1925
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\1.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\5.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\B.gif
+b 1975
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\9.gif
+b 1975
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\F.gif
+b 1900
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\S.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\7.gif
+b 1975
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\E.gif
+b 1995
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\E.gif
+b 1990
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\J.gif
+b 1900
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\G.gif
+b 1925
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\T.gif
+b 1925
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\3.gif
+b 1900
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\U.gif
+b 1900
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\B.gif
+b 1995
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\E.gif
+b 1925
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\3.gif
+b 1975
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\J.gif
+b 1995
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Q.gif
+b 1975
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Z.gif
+b 1990
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\5.gif
+b 1975
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\S.gif
+b 1995
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\N.gif
+b 1990
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\2.gif
+b 1950
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\M.gif
+b 1925
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\K.gif
+b 1900
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\C.gif
+b 1900
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\2.gif
+b 1995
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\9.gif
+b 1990
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\O.gif
+b 1990
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\A.gif
+b 1990
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\X.gif
+b 1990
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\V.gif
+b 1900
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\T.gif
+b 1900
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\A.gif
+b 1900
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\6.gif
+b 1950
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\G.gif
+b 1990
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\O.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\3.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\0.gif
+b 1900
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\X.gif
+b 1975
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\6.gif
+b 1990
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\R.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\M.gif
+b 1995
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\4.gif
+b 1975
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\W.gif
+b 1995
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\C.gif
+b 1925
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\P.gif
+b 1900
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\1.gif
+b 1995
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\X.gif
+b 1995
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\3.gif
+b 1925
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\T.gif
+b 1975
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\0.gif
+b 1990
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\I.gif
+b 1975
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\H.gif
+b 1975
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Q.gif
+b 1995
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\T.gif
+b 1995
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\5.gif
+b 1995
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\E.gif
+b 1975
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\E.gif
+b 1900
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\8.gif
+b 1975
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\P.gif
+b 1975
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\M.gif
+b 1950
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\P.gif
+b 1925
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\F.gif
+b 1990
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\L.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\W.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\V.gif
+b 1995
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Y.gif
+b 1975
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\A.gif
+b 1975
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\0.gif
+b 1950
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\N.gif
+b 1925
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\C.gif
+b 1995
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\F.gif
+b 1995
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\A.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\7.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\O.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\5.gif
+b 1925
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\W.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\9.gif
+b 1950
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\X.gif
+b 1925
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\V.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\I.gif
+b 1950
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\E.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\9.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\L.gif
+b 1900
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\G.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\B.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\S.gif
+b 1990
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\A.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\N.gif
+b 1995
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\F.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\O.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\2.gif
+b 1900
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\I.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\8.gif
+b 1990
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\K.gif
+b 1995
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\J.gif
+b 1950
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\J.gif
+b 1925
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\U.gif
+b 1990
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Z.gif
+b 1925
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\4.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\U.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\K.gif
+b 1975
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\J.gif
+b 1975
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\D.gif
+b 1990
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\M.gif
+b 1900
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\V.gif
+b 1975
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\8.gif
+b 1995
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\M.gif
+b 1990
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\F.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\0.gif
+b 1925
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\4.gif
+b 1900
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\B.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\1.gif
+b 1975
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\N.gif
+b 1900
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\C.gif
+b 1950
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\S.gif
+b 1900
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\M.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\S.gif
+b 1925
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\T.gif
+b 1990
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Y.gif
+b 1990
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\N.gif
+b 1950
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\1.gif
+b 1990
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\G.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\C.gif
+b 1990
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\R.gif
+b 1925
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Y.gif
+b 1995
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\B.gif
+b 1990
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\X.gif
+b 1950
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\R.gif
+b 1990
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\R.gif
+b 1995
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\U.gif
+b 1995
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Y.gif
+b 1925
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\7.gif
+b 1925
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\8.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\1.gif
+b 1950
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\V.gif
+b 1990
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Q.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\6.gif
+b 1995
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\4.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Z.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Q.gif
+b 1925
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\G.gif
+b 1975
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\D.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Y.gif
+b 1900
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\X.gif
+b 1900
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\O.gif
+b 1900
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\F.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\P.gif
+b 1950
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\8.gif
+b 1950
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\6.gif
+b 1925
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\W.gif
+b 1990
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\K.gif
+b 1950
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\1.gif
+b 1900
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\W.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Q.gif
+b 1990
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\L.gif
+b 1975
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\K.gif
+b 1990
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\I.gif
+b 1990
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\U.gif
+b 1975
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\C.gif
+b 1975
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\V.gif
+b 1950
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\T.gif
+b 1950
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\7.gif
+b 1900
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\P.gif
+b 1995
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\S.gif
+b 1975
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\D.gif
+b 1900
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\I.gif
+b 1925
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\H.gif
+b 1900
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\4.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\5.gif
+b 1900
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\R.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\H.gif
+b 1990
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\5.gif
+b 1990
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\P.gif
+b 1990
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\F.gif
+b 1975
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\T.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\5.gif
+b 1925
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\V.gif
+b 1975
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\0.gif
+b 1950
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\F.gif
+b 1950
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\I.gif
+b 1925
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\3.gif
+b 1975
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\B.gif
+b 1995
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\L.gif
+b 1990
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\K.gif
+b 1950
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\I.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\U.gif
+b 1995
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Q.gif
+b 1990
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\M.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\X.gif
+b 1900
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\7.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\1.gif
+b 1995
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\V.gif
+b 1925
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\G.gif
+b 1990
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\G.gif
+b 1975
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\4.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\9.gif
+b 1925
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\1.gif
+b 1990
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\2.gif
+b 1995
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\T.gif
+b 1990
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\M.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\W.gif
+b 1950
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\D.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\9.gif
+b 1990
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\I.gif
+b 1900
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\R.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\K.gif
+b 1990
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\2.gif
+b 1975
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\J.gif
+b 1900
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\E.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\6.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\N.gif
+b 1925
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\W.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Z.gif
+b 1900
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\H.gif
+b 1950
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\M.gif
+b 1990
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\A.gif
+b 1990
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Z.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\8.gif
+b 1995
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\1.gif
+b 1925
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\C.gif
+b 1900
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\R.gif
+b 1925
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\F.gif
+b 1900
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\8.gif
+b 1975
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\1.gif
+b 1975
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Y.gif
+b 1900
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\1.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\J.gif
+b 1990
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\B.gif
+b 1900
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\4.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\A.gif
+b 1950
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\U.gif
+b 1925
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\T.gif
+b 1900
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\P.gif
+b 1900
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\4.gif
+b 1950
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\U.gif
+b 1900
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\A.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\0.gif
+b 1900
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\X.gif
+b 1975
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\E.gif
+b 1995
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\M.gif
+b 1950
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\B.gif
+b 1925
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\F.gif
+b 1995
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\K.gif
+b 1925
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\3.gif
+b 1900
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Q.gif
+b 1900
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Q.gif
+b 1975
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\W.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Y.gif
+b 1925
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\P.gif
+b 1995
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\K.gif
+b 1975
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\3.gif
+b 1950
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\9.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\7.gif
+b 1995
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\B.gif
+b 1950
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\J.gif
+b 1925
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\N.gif
+b 1995
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\L.gif
+b 1975
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\M.gif
+b 1975
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\9.gif
+b 1975
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\D.gif
+b 1950
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\V.gif
+b 1990
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\6.gif
+b 1925
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\P.gif
+b 1925
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\7.gif
+b 1975
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\5.gif
+b 1900
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Q.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\L.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\0.gif
+b 1990
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\U.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\9.gif
+b 1995
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\6.gif
+b 1990
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Y.gif
+b 1995
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\G.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\S.gif
+b 1950
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\2.gif
+b 1950
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\H.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\J.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\4.gif
+b 1995
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\E.gif
+b 1925
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\X.gif
+b 1995
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\O.gif
+b 1975
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\C.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\0.gif
+b 1975
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Z.gif
+b 1995
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\E.gif
+b 1975
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\O.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\G.gif
+b 1900
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\S.gif
+b 1900
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\K.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\7.gif
+b 1900
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\N.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\8.gif
+b 1925
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\I.gif
+b 1975
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\H.gif
+b 1900
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\3.gif
+b 1995
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\G.gif
+b 1995
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\T.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\9.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\C.gif
+b 1990
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\V.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\C.gif
+b 1995
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\O.gif
+b 1925
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\K.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\S.gif
+b 1990
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\R.gif
+b 1950
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Y.gif
+b 1950
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\V.gif
+b 1900
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\A.gif
+b 1925
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\E.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\H.gif
+b 1990
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\D.gif
+b 1990
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\X.gif
+b 1925
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\5.gif
+b 1990
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Y.gif
+b 1975
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\1.gif
+b 1950
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Q.gif
+b 1950
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Q.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\X.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\V.gif
+b 1995
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\R.gif
+b 1975
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Z.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\T.gif
+b 1925
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\S.gif
+b 1975
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\6.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\N.gif
+b 1900
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\5.gif
+b 1950
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\6.gif
+b 1900
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\T.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\B.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\C.gif
+b 1925
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\M.gif
+b 1900
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\H.gif
+b 1995
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\S.gif
+b 1925
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\O.gif
+b 1990
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\J.gif
+b 1975
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\8.gif
+b 1990
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\D.gif
+b 1975
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\E.gif
+b 1990
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\G.gif
+b 1950
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\L.gif
+b 1925
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\8.gif
+b 1900
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\L.gif
+b 1995
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\O.gif
+b 1950
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\3.gif
+b 1990
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Z.gif
+b 1990
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\J.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\O.gif
+b 1900
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\U.gif
+b 1975
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Y.gif
+b 1990
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\R.gif
+b 1995
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\3.gif
+b 1925
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\P.gif
+b 1975
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\R.gif
+b 1990
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\X.gif
+b 1990
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\A.gif
+b 1975
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\N.gif
+b 1990
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\L.gif
+b 1950
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\W.gif
+b 1925
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\U.gif
+b 1990
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\D.gif
+b 1995
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\5.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\4.gif
+b 1900
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\7.gif
+b 1925
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\4.gif
+b 1990
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\6.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\H.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\F.gif
+b 1925
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\D.gif
+b 1925
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\F.gif
+b 1990
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\8.gif
+b 1950
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\2.gif
+b 1900
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\I.gif
+b 1995
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\I.gif
+b 1990
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Z.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\P.gif
+b 1950
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\B.gif
+b 1990
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\5.gif
+b 1975
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\W.gif
+b 1990
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\2.gif
+b 1990
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\S.gif
+b 1995
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\7.gif
+b 1990
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\C.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\2.gif
+b 1925
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\0.gif
+b 1995
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\0.gif
+b 1925
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\A.gif
+b 1900
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\W.gif
+b 1900
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\N.gif
+b 1950
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\P.gif
+b 1990
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\S.gif
+b 1900
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Z.gif
+b 1975
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\K.gif
+b 1975
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\H.gif
+b 1900
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\M.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\H.gif
+b 1995
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\R.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\A.gif
+b 1995
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\9.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\B.gif
+b 1950
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\J.gif
+b 1950
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\8.gif
+b 1925
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\4.gif
+b 1975
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\6.gif
+b 1995
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\2.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\X.gif
+b 1925
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\L.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\5.gif
+b 1925
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\1.gif
+b 1900
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\C.gif
+b 1900
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\K.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\H.gif
+b 1975
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\E.gif
+b 1995
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\H.gif
+b 1925
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\S.gif
+b 1990
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\1.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\G.gif
+b 1925
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\9.gif
+b 1975
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Z.gif
+b 1900
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\0.gif
+b 1950
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\3.gif
+b 1900
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\B.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\7.gif
+b 1990
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\J.gif
+b 1900
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\E.gif
+b 1900
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\O.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\B.gif
+b 1995
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\3.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\D.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\O.gif
+b 1900
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\4.gif
+b 1900
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\7.gif
+b 1975
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\M.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\R.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\5.gif
+b 1990
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\V.gif
+b 1975
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\W.gif
+b 1900
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\G.gif
+b 1950
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\6.gif
+b 1900
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\0.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\P.gif
+b 1990
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\K.gif
+b 1990
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\G.gif
+b 1990
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\N.gif
+b 1990
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\U.gif
+b 1990
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\3.gif
+b 1995
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\A.gif
+b 1975
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\2.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\0.gif
+b 1975
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\N.gif
+b 1950
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\X.gif
+b 1900
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\8.gif
+b 1995
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\L.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Q.gif
+b 1975
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\C.gif
+b 1995
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\8.gif
+b 1975
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\0.gif
+b 1990
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\L.gif
+b 1925
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Q.gif
+b 1900
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\1.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\5.gif
+b 1900
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\D.gif
+b 1925
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\C.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Y.gif
+b 1925
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\M.gif
+b 1900
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\A.gif
+b 1925
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Z.gif
+b 1995
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\3.gif
+b 1925
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Z.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\8.gif
+b 1950
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\O.gif
+b 1990
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\N.gif
+b 1975
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\P.gif
+b 1975
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\P.gif
+b 1995
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\U.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Y.gif
+b 1975
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\4.gif
+b 1990
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\S.gif
+b 1925
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\I.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\H.gif
+b 1990
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\B.gif
+b 1975
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\D.gif
+b 1900
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\C.gif
+b 1925
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\F.gif
+b 1925
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\0.gif
+b 1995
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\J.gif
+b 1995
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\R.gif
+b 1975
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\X.gif
+b 1990
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\3.gif
+b 1975
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\F.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Y.gif
+b 1995
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\T.gif
+b 1950
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Q.gif
+b 1950
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\W.gif
+b 1990
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\O.gif
+b 1975
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\L.gif
+b 1900
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\V.gif
+b 1950
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\R.gif
+b 1990
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\3.gif
+b 1990
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\U.gif
+b 1995
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\V.gif
+b 1990
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\E.gif
+b 1990
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\4.gif
+b 1950
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\2.gif
+b 1990
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\M.gif
+b 1990
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\T.gif
+b 1900
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\7.gif
+b 1900
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\N.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\L.gif
+b 1990
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\F.gif
+b 1900
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\1.gif
+b 1950
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\J.gif
+b 1925
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\P.gif
+b 1900
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\5.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\5.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\W.gif
+b 1925
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\V.gif
+b 1900
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\S.gif
+b 1995
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Y.gif
+b 1990
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\V.gif
+b 1925
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\M.gif
+b 1925
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\5.gif
+b 1995
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\I.gif
+b 1990
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\X.gif
+b 1995
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Q.gif
+b 1990
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\6.gif
+b 1990
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Y.gif
+b 1950
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\S.gif
+b 1950
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\N.gif
+b 1925
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\N.gif
+b 1995
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\B.gif
+b 1990
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\X.gif
+b 1975
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\I.gif
+b 1995
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\R.gif
+b 1925
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Q.gif
+b 1995
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\D.gif
+b 1950
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\6.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\O.gif
+b 1995
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\R.gif
+b 1995
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\S.gif
+b 1975
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\J.gif
+b 1990
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\T.gif
+b 1990
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\G.gif
+b 1900
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\4.gif
+b 1995
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\0.gif
+b 1925
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\K.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\8.gif
+b 1900
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Q.gif
+b 1925
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\F.gif
+b 1995
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\8.gif
+b 1990
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\A.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\6.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\O.gif
+b 1925
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\U.gif
+b 1975
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\W.gif
+b 1975
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\9.gif
+b 1900
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\X.gif
+b 1950
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Z.gif
+b 1990
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\9.gif
+b 1950
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\I.gif
+b 1925
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\1.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\E.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\2.gif
+b 1995
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\E.gif
+b 1975
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\D.gif
+b 1975
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\T.gif
+b 1975
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\B.gif
+b 1925
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\F.gif
+b 1990
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\D.gif
+b 1990
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\G.gif
+b 1975
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\W.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\2.gif
+b 1900
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\G.gif
+b 1995
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\H.gif
+b 1950
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\V.gif
+b 1995
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\9.gif
+b 1995
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\2.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\P.gif
+b 1950
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\F.gif
+b 1975
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\T.gif
+b 1995
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Y.gif
+b 1900
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\A.gif
+b 1990
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\U.gif
+b 1925
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\I.gif
+b 1975
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\M.gif
+b 1975
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\7.gif
+b 1950
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\K.gif
+b 1925
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\K.gif
+b 1900
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\Z.gif
+b 1950
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\C.gif
+b 1950
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\P.gif
+b 1925
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\I.gif
+b 1950
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\U.gif
+b 1900
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\L.gif
+b 1995
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\E.gif
+b 1925
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\9.gif
+b 1990
+i 100 V:\retina\John B\phd backup\matlab\stimuli\uled letters\A.gif
+b 1900
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\T.gif
+b 1925
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\7.gif
+b 1925
+i 25 V:\retina\John B\phd backup\matlab\stimuli\uled letters\J.gif
+b 1975
+i 50 V:\retina\John B\phd backup\matlab\stimuli\uled letters\W.gif
+b 1950
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\4.gif
+b 1925
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\C.gif
+b 1990
+i 10 V:\retina\John B\phd backup\matlab\stimuli\uled letters\1.gif
+b 1990
+i 5 V:\retina\John B\phd backup\matlab\stimuli\uled letters\7.gif
+b 1995
+i 75 V:\retina\John B\phd backup\matlab\stimuli\uled letters\6.gif
+b 1925

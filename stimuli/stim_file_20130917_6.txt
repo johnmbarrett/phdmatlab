@@ -1,0 +1,640 @@
+m ns 100 4
+b 2800
+m nwse 100 3
+b 2700
+m nesw 100 2
+b 2600
+m nwse 100 2
+b 2600
+m nesw 100 1
+b 2500
+m senw 100 4
+b 2800
+m ew 100 1
+b 2500
+m ew 100 3
+b 2700
+m swne 100 4
+b 2800
+m we 100 4
+b 2800
+m swne 100 1
+b 2500
+m sn 100 3
+b 2700
+m swne 100 3
+b 2700
+m ew 100 2
+b 2600
+m we 100 3
+b 2700
+m nesw 100 4
+b 2800
+m we 100 2
+b 2600
+m swne 100 2
+b 2600
+m senw 100 1
+b 2500
+m nesw 100 3
+b 2700
+m ew 100 4
+b 2800
+m nwse 100 4
+b 2800
+m nwse 100 1
+b 2500
+m sn 100 2
+b 2600
+m sn 100 4
+b 2800
+m ns 100 3
+b 2700
+m senw 100 2
+b 2600
+m ns 100 2
+b 2600
+m ns 100 1
+b 2500
+m senw 100 3
+b 2700
+m sn 100 1
+b 2500
+m we 100 1
+b 2500
+m ew 100 3
+b 2700
+m we 100 3
+b 2700
+m swne 100 4
+b 2800
+m ew 100 4
+b 2800
+m ew 100 1
+b 2500
+m nesw 100 2
+b 2600
+m we 100 2
+b 2600
+m we 100 4
+b 2800
+m nwse 100 4
+b 2800
+m nwse 100 3
+b 2700
+m ns 100 3
+b 2700
+m nwse 100 2
+b 2600
+m we 100 1
+b 2500
+m sn 100 3
+b 2700
+m ns 100 4
+b 2800
+m sn 100 2
+b 2600
+m senw 100 1
+b 2500
+m ns 100 2
+b 2600
+m ns 100 1
+b 2500
+m sn 100 1
+b 2500
+m nwse 100 1
+b 2500
+m nesw 100 1
+b 2500
+m senw 100 3
+b 2700
+m swne 100 1
+b 2500
+m swne 100 2
+b 2600
+m nesw 100 3
+b 2700
+m swne 100 3
+b 2700
+m senw 100 2
+b 2600
+m senw 100 4
+b 2800
+m ew 100 2
+b 2600
+m sn 100 4
+b 2800
+m nesw 100 4
+b 2800
+m ew 100 4
+b 2800
+m swne 100 3
+b 2700
+m we 100 1
+b 2500
+m senw 100 2
+b 2600
+m swne 100 2
+b 2600
+m senw 100 1
+b 2500
+m sn 100 1
+b 2500
+m we 100 3
+b 2700
+m nwse 100 4
+b 2800
+m swne 100 4
+b 2800
+m senw 100 4
+b 2800
+m ns 100 4
+b 2800
+m we 100 2
+b 2600
+m nesw 100 1
+b 2500
+m nesw 100 4
+b 2800
+m we 100 4
+b 2800
+m ew 100 2
+b 2600
+m nesw 100 3
+b 2700
+m senw 100 3
+b 2700
+m ns 100 3
+b 2700
+m nwse 100 1
+b 2500
+m nesw 100 2
+b 2600
+m ns 100 2
+b 2600
+m swne 100 1
+b 2500
+m sn 100 3
+b 2700
+m sn 100 2
+b 2600
+m ew 100 3
+b 2700
+m ew 100 1
+b 2500
+m ns 100 1
+b 2500
+m sn 100 4
+b 2800
+m nwse 100 3
+b 2700
+m nwse 100 2
+b 2600
+m nesw 100 4
+b 2800
+m sn 100 1
+b 2500
+m senw 100 3
+b 2700
+m nesw 100 1
+b 2500
+m swne 100 2
+b 2600
+m nwse 100 3
+b 2700
+m ew 100 3
+b 2700
+m swne 100 4
+b 2800
+m nwse 100 1
+b 2500
+m ns 100 4
+b 2800
+m ns 100 1
+b 2500
+m swne 100 3
+b 2700
+m nesw 100 3
+b 2700
+m nwse 100 2
+b 2600
+m senw 100 2
+b 2600
+m ew 100 1
+b 2500
+m ns 100 2
+b 2600
+m sn 100 3
+b 2700
+m senw 100 4
+b 2800
+m sn 100 2
+b 2600
+m nesw 100 2
+b 2600
+m nwse 100 4
+b 2800
+m we 100 3
+b 2700
+m ew 100 2
+b 2600
+m ns 100 3
+b 2700
+m sn 100 4
+b 2800
+m we 100 2
+b 2600
+m we 100 4
+b 2800
+m ew 100 4
+b 2800
+m senw 100 1
+b 2500
+m swne 100 1
+b 2500
+m we 100 1
+b 2500
+m nwse 100 2
+b 2600
+m we 100 2
+b 2600
+m we 100 4
+b 2800
+m senw 100 1
+b 2500
+m senw 100 3
+b 2700
+m nesw 100 2
+b 2600
+m ns 100 2
+b 2600
+m nesw 100 1
+b 2500
+m ns 100 1
+b 2500
+m ew 100 2
+b 2600
+m ew 100 3
+b 2700
+m nwse 100 1
+b 2500
+m ns 100 4
+b 2800
+m nesw 100 3
+b 2700
+m senw 100 2
+b 2600
+m swne 100 3
+b 2700
+m sn 100 3
+b 2700
+m ns 100 3
+b 2700
+m sn 100 1
+b 2500
+m sn 100 2
+b 2600
+m ew 100 1
+b 2500
+m nesw 100 4
+b 2800
+m nwse 100 3
+b 2700
+m we 100 3
+b 2700
+m swne 100 1
+b 2500
+m swne 100 2
+b 2600
+m senw 100 4
+b 2800
+m we 100 1
+b 2500
+m nwse 100 4
+b 2800
+m ew 100 4
+b 2800
+m sn 100 4
+b 2800
+m swne 100 4
+b 2800
+m nesw 100 2
+b 2600
+m ns 100 4
+b 2800
+m senw 100 2
+b 2600
+m ns 100 1
+b 2500
+m senw 100 3
+b 2700
+m swne 100 2
+b 2600
+m we 100 1
+b 2500
+m ew 100 2
+b 2600
+m ew 100 4
+b 2800
+m sn 100 3
+b 2700
+m ns 100 3
+b 2700
+m ns 100 2
+b 2600
+m sn 100 4
+b 2800
+m senw 100 1
+b 2500
+m swne 100 1
+b 2500
+m nesw 100 3
+b 2700
+m nwse 100 2
+b 2600
+m ew 100 3
+b 2700
+m nesw 100 1
+b 2500
+m nwse 100 3
+b 2700
+m nesw 100 4
+b 2800
+m swne 100 4
+b 2800
+m ew 100 1
+b 2500
+m we 100 3
+b 2700
+m we 100 4
+b 2800
+m swne 100 3
+b 2700
+m nwse 100 4
+b 2800
+m sn 100 1
+b 2500
+m nwse 100 1
+b 2500
+m senw 100 4
+b 2800
+m sn 100 2
+b 2600
+m we 100 2
+b 2600
+m ew 100 1
+b 2500
+m ew 100 3
+b 2700
+m swne 100 1
+b 2500
+m swne 100 2
+b 2600
+m senw 100 4
+b 2800
+m sn 100 4
+b 2800
+m ns 100 3
+b 2700
+m ew 100 2
+b 2600
+m ew 100 4
+b 2800
+m ns 100 1
+b 2500
+m we 100 2
+b 2600
+m nwse 100 2
+b 2600
+m senw 100 2
+b 2600
+m sn 100 2
+b 2600
+m ns 100 2
+b 2600
+m nwse 100 1
+b 2500
+m nwse 100 3
+b 2700
+m sn 100 1
+b 2500
+m ns 100 4
+b 2800
+m we 100 1
+b 2500
+m senw 100 3
+b 2700
+m we 100 3
+b 2700
+m nesw 100 3
+b 2700
+m nesw 100 2
+b 2600
+m sn 100 3
+b 2700
+m swne 100 3
+b 2700
+m we 100 4
+b 2800
+m nwse 100 4
+b 2800
+m nesw 100 1
+b 2500
+m senw 100 1
+b 2500
+m nesw 100 4
+b 2800
+m swne 100 4
+b 2800
+m ns 100 4
+b 2800
+m senw 100 2
+b 2600
+m nwse 100 1
+b 2500
+m ns 100 1
+b 2500
+m nesw 100 3
+b 2700
+m swne 100 4
+b 2800
+m we 100 1
+b 2500
+m swne 100 1
+b 2500
+m ew 100 1
+b 2500
+m we 100 4
+b 2800
+m senw 100 1
+b 2500
+m ns 100 3
+b 2700
+m ew 100 2
+b 2600
+m swne 100 2
+b 2600
+m we 100 2
+b 2600
+m ew 100 4
+b 2800
+m senw 100 4
+b 2800
+m senw 100 3
+b 2700
+m sn 100 4
+b 2800
+m nwse 100 4
+b 2800
+m nesw 100 4
+b 2800
+m nwse 100 2
+b 2600
+m ew 100 3
+b 2700
+m sn 100 2
+b 2600
+m we 100 3
+b 2700
+m sn 100 1
+b 2500
+m sn 100 3
+b 2700
+m swne 100 3
+b 2700
+m ns 100 2
+b 2600
+m nwse 100 3
+b 2700
+m nesw 100 2
+b 2600
+m nesw 100 1
+b 2500
+m sn 100 2
+b 2600
+m ew 100 3
+b 2700
+m senw 100 4
+b 2800
+m we 100 2
+b 2600
+m senw 100 1
+b 2500
+m nwse 100 4
+b 2800
+m senw 100 2
+b 2600
+m nwse 100 1
+b 2500
+m ns 100 3
+b 2700
+m ew 100 1
+b 2500
+m swne 100 1
+b 2500
+m sn 100 3
+b 2700
+m nesw 100 1
+b 2500
+m swne 100 2
+b 2600
+m we 100 3
+b 2700
+m nwse 100 2
+b 2600
+m ns 100 2
+b 2600
+m ew 100 2
+b 2600
+m senw 100 3
+b 2700
+m nesw 100 4
+b 2800
+m nesw 100 2
+b 2600
+m nesw 100 3
+b 2700
+m swne 100 4
+b 2800
+m we 100 4
+b 2800
+m nwse 100 3
+b 2700
+m we 100 1
+b 2500
+m sn 100 4
+b 2800
+m ew 100 4
+b 2800
+m swne 100 3
+b 2700
+m sn 100 1
+b 2500
+m ns 100 4
+b 2800
+m ns 100 1
+b 2500
+m sn 100 1
+b 2500
+m we 100 2
+b 2600
+m nesw 100 1
+b 2500
+m ns 100 3
+b 2700
+m sn 100 3
+b 2700
+m swne 100 2
+b 2600
+m ew 100 3
+b 2700
+m swne 100 3
+b 2700
+m senw 100 3
+b 2700
+m senw 100 4
+b 2800
+m nesw 100 2
+b 2600
+m nesw 100 4
+b 2800
+m nwse 100 2
+b 2600
+m ns 100 2
+b 2600
+m sn 100 4
+b 2800
+m ns 100 4
+b 2800
+m nwse 100 4
+b 2800
+m swne 100 1
+b 2500
+m swne 100 4
+b 2800
+m we 100 1
+b 2500
+m we 100 4
+b 2800
+m we 100 3
+b 2700
+m ew 100 2
+b 2600
+m nwse 100 1
+b 2500
+m senw 100 2
+b 2600
+m sn 100 2
+b 2600
+m ew 100 1
+b 2500
+m ew 100 4
+b 2800
+m senw 100 1
+b 2500
+m ns 100 1
+b 2500
+m nesw 100 3
+b 2700
+m nwse 100 3
+b 2700

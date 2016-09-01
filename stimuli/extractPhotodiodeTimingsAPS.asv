@@ -1,0 +1,18 @@
+function [frameSamples,frameTimes] = extractPhotodiodeTimingsAPS(photodiodeFile,order,ripple,attenuation,lowPassFrequency,threshold,minFrameTime)
+    % load data
+    load(photodiodeFile,'Ch01_02','SamplingFrequency');
+    x = Ch01_02;
+    Fs = SamplingFrequency;
+    
+    % low pass filter
+    [b,a] = ellip(order,ripple,attenuation,lowPassFrequency/(Fs/2));
+    z = filtfilt(b,a,x);
+    
+    % find threshold-crossings
+    frameSamples = find(diff(z > threshold));
+    
+    % 
+    frameSamples = frameSamples([1 find(diff(frameSamples) > Fs*minFrameTime) + 1]);
+    
+    frameTimes = frameSamples/Fs;
+end

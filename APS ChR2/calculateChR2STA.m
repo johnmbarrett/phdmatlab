@@ -1,0 +1,177 @@
+load('channelNames.mat');
+load('EventNo.mat');
+load('spiketimestamps.mat');
+
+if exist('./ChR2_cells_grey.mat','file')
+    load('ChR2_cells_grey.mat');
+elseif exist('./ChR2_cells_ff.mat','file')
+    load('ChR2_cells_ff.mat');
+elseif exist('./ChR2_cells.mat','file')
+    load('ChR2_cells.mat');
+else
+    error('Run detectChR2ResponsiveCells first!');
+end
+
+%%
+
+stimulusFile = 'V:\retina\John B\phd backup\aps stimuli\ChR2 stim test\flashing squares\sequence.mat';
+load(stimulusFile);
+
+%%
+
+N = grids(end);
+sizes = grids(end)./grids;
+
+nStimuli = sum(grids.^2);
+pixels = false(N,N,nStimuli);
+staIndices = zeros(nStimuli,1);
+
+nGrids = numel(grids);
+
+n = 0;
+for ii = 1:nGrids
+    g = grids(ii);
+    s = sizes(ii);
+    
+    for jj = 1:g
+        for kk = 1:g
+            n = n+1;
+            staIndices(n) = ii;
+            pixels((jj-1)*s+1:jj*s,(kk-1)*s+1:kk*s,n) = true;
+        end
+    end
+end
+
+pixels = reshape(pixels,N*N,nStimuli);
+
+%%
+
+nCells = numel(bestUnits);
+
+% TODO : multiple
+squaresRecording = 7;
+
+stas = zeros(N*N,50,nGrids,nCells);
+
+saveFile = sprintf('Stim %d\\square_responses.mat',squaresRecording);
+
+%%
+
+frameTimes = EventNo{squaresRecording};
+assert(numel(frameTimes) == 3400);
+
+mkdir(sprintf('Stim %d',squaresRecording));
+
+%%
+
+divisor = 10*0.1;
+
+oldPix = false(N*N,1);
+
+for hh = 1:3400
+    tic;
+    
+    onset = frameTimes(hh);
+    offset = onset+0.5;
+    
+%     if hh < 3400
+%         offset = frameTimes(hh+1);
+%     else
+%         offset = onset+mean(diff(frameTimes));
+%     end
+    
+    stimulusIndex = conditionOrder(hh);
+    staIndex = staIndices(stimulusIndex);
+    
+    if stimulusIndex < 5
+        toc;
+        continue;
+    end
+    
+    if hh > 1
+        oldPix = newPix;
+    end
+    
+    newPix = pixels(:,stimulusIndex);
+    
+    spikeTimes = cellfun(@(t) ceil(100*(t(t > onset & t <= offset)-onset)),spiketimestamps(bestUnits),'UniformOutput',false);
+    
+    for ii = 1:nCells
+        ts = spikeTimes{ii};
+        
+        for jj = 1:numel(ts)
+            stas(oldPix,(ts(jj)+1):50,staIndex,ii) = stas(oldPix,(ts(jj)+1):50,staIndex,ii) + 1;
+            stas(newPix,1:ts(jj),staIndex,ii) = stas(newPix,1:ts(jj),staIndex,ii) + 1;
+        end
+    end
+    
+%         stas(:,:,spikeTimes,:) = stas(:,:,staIndex,:) + repmat(pix,[1 1 1 nCells]).*repmat(reshape(nSpikes,[1 1 1 nCells]),[N N 1 1]);
+    
+    toc;
+end
+
+stas = reshape(stas(:,50:-1:1,:,:),[N N 50 nGrids nCells]);
+
+save(saveFile,'-v7.3','stas');
+
+%%
+
+load(saveFile,'allNSpikes');
+
+%%
+
+ticks = cell(4,1);
+labels = cell(4,1);
+
+for ii = 1:nGrids
+    n = grids(ii);
+    ticks{ii} = 0:N/n:N;
+    s = ceil(664/n);
+    labels{ii} = 4*(0:s:n*s)/1000;
+end
+
+%%
+
+figure;
+set(gcf,'Renderer','zbuffer');
+
+for ii = 1:nCells
+    tic;
+    for jj = 2:nGrids
+%         pcolor(0:16,0:16,[stas(:,:,jj,ii) zeros(N,1); zeros(1,N+1)]);
+        sta = stas(:,:,:,jj,ii);
+        
+        minS = min(sta(:));
+        maxS = max(sta(:));
+        
+        idx = find(sta == maxS);
+        [~,~,t] = ind2sub(size(sta),idx);
+        
+        S = sum(sum(sta(:,:,t),1),2);
+        t = t(S == max(S));
+        
+        if numel(t) > 1
+            t = t(end);
+        end
+        
+        surf(0:16,0:16,[(sta(:,:,t)-minS)/(maxS-minS) zeros(N,1); zeros(1,N+1)]);
+        view(2);
+        caxis([0 1]);
+        shading flat;
+        
+        unitName = channelNames{1,bestUnits(ii)};
+        
+        set(gca,'XTick',ticks{jj},'XTickLabel',labels{jj},'YTick',ticks{jj},'YTickLabel',labels{jj});
+%         set(gca,'XTick',ticks{3},'XTickLabel',labels{3},'YTick',ticks{3},'YTickLabel',labels{3});
+%         title(strrep(sprintf('STA for Neuron %s - %dx%d grid',unitName,grids(jj),grids(jj)),'_','\_'));
+        title(strrep(sprintf('STA for Neuron %s at t = -%dms, %dx%d grid',unitName,10*(51-t),grids(jj),grids(jj)),'_','\_'));
+        
+%         figFile = sprintf('Stim %d\\sta_channel_%s_cluster_%s_%02dx%02d_grid',squaresRecording,unitName(1:7),unitName(end),grids(jj),grids(jj));
+        figFile = sprintf('Stim %d\\finesta_channel_%s_cluster_%s_%02dx%02d_grid',squaresRecording,unitName(1:7),unitName(end),grids(jj),grids(jj));
+        saveas(gcf,figFile,'fig');
+        saveas(gcf,figFile,'png');
+    end
+    toc;
+end
+
+close(gcf);

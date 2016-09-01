@@ -1,0 +1,442 @@
+function grating2AFCAnalysis(independentVariable,ctrlRecording,drugRecording,useAllResponders,blocks,decoder,parallelisation,ctrlCellsSuffix,drugCellsSuffix,saveFileSuffix)
+% confounder = 'contrast';
+% confounder = 'frequency';
+    if nargin < 10
+        saveFileSuffix = '';
+    else
+        saveFileSuffix = ['_' saveFileSuffix];
+    end
+    
+    if nargin < 9
+        drugCellsSuffix = 'drug';
+    end
+    
+    if nargin < 8
+        ctrlCellsSuffix = 'ctrl';
+    end
+
+    if nargin < 7
+        parallelisation = struct('section','none');
+    end
+    
+    if nargin < 6
+        decoder = 'discrete';
+    end
+
+    if nargin < 4
+        useAllResponders = false;
+    end
+
+    %%
+    
+    load(['./' independentVariable ' sequence.mat']);
+
+    %%
+
+    if nargin < 5
+        blocks = (1:nReps)';
+    elseif isscalar(blocks)
+        blocks = (1:blocks)';
+    else
+        blocks = blocks(:);
+    end
+
+    nBlocks = numel(blocks);
+    
+    %%
+
+    if strcmp(independentVariable,'contrast')
+        legendLocation = 'NorthWest';
+        xvals = 100*C';
+        xticks = xvals;
+        xticklabels = arrayfun(@(c) sprintf('%d',c),10*floor(xvals/10),'UniformOutput',false);
+        xlab = 'Michelson Contrast (%)';
+        xlims = [0 70];
+        xscale = 'linear';
+%         splits = [1 3; 4 6];
+%         subplotTitles = arrayfun(@(c) sprintf('Contrast = %3.1f%%',c),100*C,'UniformOutput',false);
+    elseif strcmp(independentVariable,'frequency')
+        legendLocation = 'NorthEast';
+        xvals = (30./(barWidths*4*2))';
+        xticks = wrev(xvals);
+        xticklabels = arrayfun(@(f) sprintf('%0.3f',f),xticks,'UniformOutput',false);
+        xlab = 'Frequency (cpd)';
+        xlims = [10^-2 10^-0.4];
+        xscale = 'log';
+%         splits = [1 6];
+%         subplotTitles = arrayfun(@(f) sprintf('Frequency = %0.4f cpd',f),xvals,'UniformOutput',false);
+    else
+        legendLocation = 'NorthWest';
+        xvals = 100*(Lmed-Lmin)'./Lmin;
+        xticks = xvals;
+        xticklabels = arrayfun(@(l) sprintf('%4.0f',l),xvals,'UniformOutput',false);
+        xlab = 'Weber Contrast (%)';
+        xlims = [0 1500];
+        xscale = 'linear';
+    end
+    
+    doInit = any(strcmp(parallelisation.section,{'none' 'init'}));
+    doMain = any(strcmp(parallelisation.section,{'none' 'main'}));
+    doFinish = any(strcmp(parallelisation.section,{'none' 'finish'}));
+    
+    initFile = sprintf('gratings_perf_vs_%s_decoder_%s_init%s.mat',independentVariable,decoder,saveFileSuffix);
+    likelihoodsFilePrefix = sprintf('gratings_perf_vs_%s_decoder_%s_likelihoods%s',independentVariable,decoder,saveFileSuffix);
+    
+    %%
+
+    if doInit
+        %%
+        load('channelNames.mat');
+        load('EventNo.mat');
+        load('spiketimestamps.mat');
+
+        %%
+
+        ctrl = load(['ChR2_cells_letters_' ctrlCellsSuffix '.mat'],'bestUnits');
+        drug = load(['ChR2_cells_letters_' drugCellsSuffix '.mat'],'bestUnits');
+        units = cell(1,2);
+
+        if ~islogical(useAllResponders)
+            niceUnits = {39 42 'a'};
+    %             5	29	'a';	...
+    %                      6	23	'a';	...
+    %                      9	19	'a';	...
+    %                      12	16	'a';	...
+    %                      23	28	'a';	...
+    %                      26	22	'a';	...
+    %                      28	32	'b';	...
+    %                      29	30	'b';	...
+    %                      29	32	'b';	...
+    %                      30	11	'a';	...
+    %                      30	30	'a';	...
+    %                      31	45	'a';	...
+    %                      32	31	'a';	...
+    %                      33	48	'a';	...
+    %                      33	57	'a';	...
+    %                      38	43	'b';	...
+    %                      39	42	'a'};
+
+             niceUnitNames = cellfun(@(r,c,u) sprintf('Ch%02d_%02d%c',r,c,u),niceUnits(:,1),niceUnits(:,2),niceUnits(:,3),'UniformOutput',false);
+
+             units{1} = find(ismember(channelNames(1,:)',niceUnitNames)); %#ok<NODEF>
+             units{2} = units{1};
+        elseif useAllResponders
+            allUnits = union(ctrl.bestUnits,drug.bestUnits);
+
+            for stimulusIndex = 1:2
+                units{stimulusIndex} = allUnits;
+            end
+        else
+            units{1} = ctrl.bestUnits;
+            units{2} = drug.bestUnits;
+        end
+
+        %%
+
+    %     ctrlRecording = 2;
+    %     drugRecording = 5;
+        recordings = [ctrlRecording drugRecording];
+
+        gratingStimuli = find(~ismember(conditionOrder,[0 size(conditions,1)+1]));
+        nConditions = size(conditions,1);
+        gratingStimuli = gratingStimuli(kron(blocks-1,ones(nConditions,1))*nConditions+repmat((1:nConditions)',nBlocks,1));
+        stimulusConditions = conditions(conditionOrder(gratingStimuli),2:4);
+        trialOrder = stimulusConditions(:,3);
+
+        firstStimOnsets = 6*(gratingStimuli-1)+1;
+    %     secondStimOnsets = 6*(gratingStimuli-1)+2;
+        thirdStimOnsets = 6*(gratingStimuli-1)+3;
+
+        gratingOnsets = zeros(size(firstStimOnsets));
+        gratingOnsets(trialOrder == 0) = firstStimOnsets(trialOrder == 0);
+        gratingOnsets(trialOrder == 1) = thirdStimOnsets(trialOrder == 1);
+
+        maskOnsets = zeros(size(firstStimOnsets));
+        maskOnsets(trialOrder == 0) = thirdStimOnsets(trialOrder == 0);
+        maskOnsets(trialOrder == 1) = firstStimOnsets(trialOrder == 1);
+
+        gratingTimes = cell2mat(cellfun(@(t) t(gratingOnsets),EventNo(recordings),'UniformOutput',false)); %#ok<USENS>
+        maskTimes = cell2mat(cellfun(@(t) t(maskOnsets),EventNo(recordings),'UniformOutput',false));
+
+        s = stimulusConditions(:,1)+4*(stimulusConditions(:,2)-1);
+
+        %%
+
+        [~,~,phaseXLevel] = unique(stimulusConditions(:,1:2),'rows');
+        disp(sum(cellfun(@numel,units)));
+        
+        %%
+        
+        for ii = 1:2
+            for jj = 1:numel(units{ii})
+                tic;
+                figs = rasterPlot(spiketimestamps{units{ii}(jj)},EventNo{recordings(ii)}(firstStimOnsets),phaseXLevel,-0.25:0.25:1,[],true,0.05,stimulusConditions(:,3),{'Phase X Level','Mask First'},true); %#ok<USENS>
+                
+                for kk = 1:2
+                    figFile = sprintf('Stim %d\\2afcraster_channel_%s_maskfirst_%d',recordings(ii),channelNames{1,units{ii}(jj)},kk-1); %#ok<USENS>
+                    saveas(figs(kk),figFile,'fig');
+                    saveas(figs(kk),figFile,'png');
+                    close(figs(kk));
+                end
+                
+                toc;
+            end
+        end
+
+        %%
+
+        Gs = cell(1,2);
+        Ms = cell(1,2);
+
+        %%
+
+        % this section of code makes Baby Knuth cry :'(
+    %     units2 = {2559 2559};
+        if strcmp(decoder,'discrete')
+            uniformOutput = true;
+            respFun = @(st,t0) sum(st > t0 & st <= t0 + 0.25);
+            catFun = @cell2mat;
+            initFun = @initDiscreteDecoder;
+            trainFun = @trainDiscreteDecoder;
+            testFun = @getDiscreteLikelihood;
+        elseif strncmp(decoder,'jacobs',6)
+            uniformOutput = false;
+    %         respFun = @(st,t0) st(st > t0 - 0.25 & st <= t0 + 0.5) - t0;
+            respFun = @(st,t0) st(st > t0 & st <= t0 + 0.25) - t0;
+            catFun = @(Cs) [Cs{:}];
+
+            if numel(decoder) > 6
+                densityEstimationMethod = decoder(7:end);
+            else
+                densityEstimationMethod = 'kde';
+            end
+
+            [trainFun,initFun] = getJacobsDecoderTrainingFun(0.001,0.005,0.25,densityEstimationMethod);
+            testFun = @getJacobsLikelihood;
+        else
+            error('Unknown decoder');
+        end
+
+        %%
+
+        for hh = 1:2
+            Gs{hh} = catFun(cellfun(@(st) arrayfun(@(gt) respFun(st,gt),gratingTimes(:,hh),'UniformOutput',uniformOutput),spiketimestamps(units{hh}),'UniformOutput',false));
+            Ms{hh} = catFun(cellfun(@(st) arrayfun(@(mt) respFun(st,mt),maskTimes(:,hh),'UniformOutput',uniformOutput),spiketimestamps(units{hh}),'UniformOutput',false));
+        end
+        
+        %%
+        
+        normResp = cellfun(@(u) zeros(nReps,numel(u),2,4,6,2),units,'UniformOutput',false);
+        maxResp = cellfun(@(G,M) repmat(max([G;M],[],1),nReps,1),Gs,Ms,'UniformOutput',false);
+        
+        assert(all(cellfun(@(A) all(A(:) > 0),maxResp)));
+        
+        %%
+        
+        for ii = 1:2
+            for jj = 1:6
+                for kk = 1:4
+                    for ll = 1:2
+                        stimIndices = stimulusConditions(:,1) == kk & stimulusConditions(:,2) == jj & stimulusConditions(:,3) == ll-1;
+                        normResp{ii}(:,:,ll,kk,jj,1) = Gs{ii}(stimIndices,:)./maxResp{ii};
+                        normResp{ii}(:,:,ll,kk,jj,2) = Ms{ii}(stimIndices,:)./maxResp{ii};
+                    end
+                end
+                
+                for kk = 1:nCells(ii)
+                    phaseResp = permute(mean(mean(mean(normResp{ii}(:,kk,:,:,:,1),1),3),5),[4 1 2 3 5 6]);
+                    bestPhase = find(phaseResp == max(phaseResp,1));
+                    normResp{ii} = circshift(normResp{ii},[0 0 0 2-bestPhase 0 0]);
+                end
+            end
+        end
+        
+        %%
+        
+        figure;
+        set(gcf,'Position',[9 49 944 948]);
+        
+        for ii = 1:6
+            subplot('Position',[0.06+0.49*mod(ii-1,2) 1.0225-0.31*ceil(ii/2) 0.44 0.25]);
+            errorbar(reshape(permute(mean(permute(normResp{2}(:,end,:,:,ii,:),[1 3 4 6 2 5]),1),[3 2 4 1 5 6]),[4 4 1 1 1 1]),reshape(permute(std(permute(normResp{2}(:,end,:,:,ii,:),[1 3 4 6 2 5]),1),[3 2 4 1 5 6]),[4 4 1 1 1 1]),'LineWidth',1.5);
+            
+            set(gca,'LineWidth',1.5,'XTick',1:4);
+            
+            title(sprintf('Contrast = %d0%%',ii));
+            
+            if ii == 5
+                xlabel('Phase');
+                ylabel('Normalised Response');
+            end
+            
+            ylim([-0.2 0.8]);
+        end
+        
+        legend({'Grating First' 'Grating Second' 'Grating 
+
+        %%
+
+        nStimuli = size(gratingStimuli,1);
+        t = kron([2;1],ones(nStimuli,1));
+    %     t = [s+1; ones(nStimuli,1)];
+    %     logPs = log([0.5 repmat(1/48,1,24)]);
+
+        Rs = cellfun(@vertcat,Gs,Ms,'UniformOutput',false);
+        paramss = cellfun(@(R) initFun(t,R),Rs,'UniformOutput',false);
+        trials = repmat((1:nStimuli)',2,1)-1;
+        
+        save(initFile,'trials','nStimuli','t','Gs','Ms','Rs','paramss','trainFun','testFun','stimulusConditions');
+    end
+    
+    %%
+    
+    if doMain
+        load(initFile);
+        
+        if strcmp(parallelisation.section,'none')
+            stimulusIter = 1:nStimuli;
+            conditionIter = 1:2;
+            cellIter = cellfun(@(R) 1:size(R,2),Rs,'UniformOutput',false);
+        else
+            stimulusIter = parallelisation.stimulusIter;
+            conditionIter = parallelisation.conditionIter;
+            cellIter = parallelisation.cellIter;
+        end
+            
+%         detectionSuccess = zeros(nBlocks*2,4,6,2);
+%         seen = zeros(4,6);
+
+        gratingLikelihoods = cellfun(@(cells) zeros(numel(stimulusIter),numel(cells)),cellIter,'UniformOutput',false);
+        maskLikelihoods = cellfun(@(cells) zeros(numel(stimulusIter),numel(cells)),cellIter,'UniformOutput',false);
+
+    %     discriminationSuccess = zeros(nReps*2,4,6,2);
+
+        for ii = 1:numel(stimulusIter)
+            stimulusIndex = stimulusIter(ii);
+            tic;
+            testTrial = mod(trials,nStimuli) == stimulusIndex-1;
+            gratingTest = find(testTrial(1:nStimuli));
+
+            phase = stimulusConditions(gratingTest,1);
+            level = stimulusConditions(gratingTest,2);
+%             seen(phase,level) = seen(phase,level) + 1;
+
+            gratingTrainIndices = find(~testTrial(1:nStimuli) & stimulusConditions(:,1) == phase & stimulusConditions(:,2) == level);
+
+            if strcmp(independentVariable,'luminance')
+                maskTrainIndices = find(~testTrial(nStimuli+1:2*nStimuli) & stimulusConditions(:,2) == level)+nStimuli;
+            else
+                maskTrainIndices = find(~testTrial(nStimuli+1:2*nStimuli))+nStimuli;
+            end
+
+            trainIndices = [gratingTrainIndices; maskTrainIndices];
+
+            PDFs = cellfun(@(R,params,cells) trainFun(trainIndices,t,R(:,cells),params),Rs(conditionIter),paramss(conditionIter),cellIter);
+
+            for jj = 1:numel(conditionIter)
+                conditionIndex = conditionIter(jj);
+                gratingResponse = Gs{conditionIndex}(gratingTest,cellIter{jj});
+                gratingLikelihood = testFun(gratingResponse,PDFs(conditionIndex));
+                gratingLikelihood(isinf(gratingLikelihood)) = log(eps);
+%                 gratingLikelihood = sum(gratingLikelihood,1);
+                gratingLikelihoods{jj}(ii,:) = gratingLikelihood(:,2);
+%                 gratingPosterior = gratingLikelihood+logPs;
+
+                maskResponse = Ms{conditionIndex}(testTrial(nStimuli+1:2*nStimuli),cellIter{jj});
+                maskLikelihood = testFun(maskResponse,PDFs(conditionIndex));
+                maskLikelihood(isinf(maskLikelihood)) = log(eps);
+%                 maskLikelihood = sum(maskLikelihood,1);
+                maskLikelihoods{jj}(ii,:) = maskLikelihood(:,2);
+%                 maskPosterior = maskLikelihood+logPs;
+            end
+            toc;
+        end
+        
+        if strcmp(parallelisation.section,'none')
+            likelihoodsFile = likelihoodsFilePrefix;
+        else
+            likelihoodsFile = sprintf('%s_trials_%s',likelihoodsFilePrefix,arrayToFilenameString(stimulusIter));
+        
+            conditionNames = {'control' 'drug'};
+
+            for ii = 1:2
+                if ismember(ii,conditionIter)
+                    likelihoodsFile = sprintf('%s_%s_cells_%s',likelihoodsFile,conditionNames{ii},arrayToFilenameString(cellIter{conditionIter == ii}));
+                end
+            end
+        end
+        
+        save(likelihoodsFile,'gratingLikelihoods','maskLikelihoods','conditionIter','cellIter','stimulusIter');
+    end
+    
+    %%
+
+    if ~doFinish
+        return;
+    end
+    
+    if ~doInit
+        load(initFile,'stimulusConditions');
+    end
+    
+    load(sprintf('%s.mat',likelihoodsFilePrefix));
+    
+    detectionSuccess = zeros(nBlocks*2,4,6,2);
+    logPs = [0.5 0.5];
+    
+    for ii = 1:2
+        gratingPosterior = sum(gratingLikelihoods{ii},2)+logPs(2);
+        maskPosterior = sum(maskLikelihoods{ii},2)+logPs(2);
+        
+        success = zeros(size(gratingPosterior));
+        
+        success(gratingPosterior > maskPosterior) = 1;
+        success(gratingPosterior == maskPosterior) = 0.5;
+    
+        for jj = 1:6
+            for kk = 1:4
+                idx = stimulusConditions(:,1) == kk & stimulusConditions(:,2) == jj;
+                detectionSuccess(:,kk,jj,ii) = success(idx);
+            end
+        end
+    end
+    
+    %%
+    
+    detectionPerf = 100*squeeze(mean(detectionSuccess));
+    
+    %%
+    
+    resultsFile = [independentVariable '_2afc_responses_decoder_' decoder saveFileSuffix '.mat'];
+    save(resultsFile,'detectionPerf','detectionSuccess');
+    
+    %%
+    
+    load(resultsFile);
+    
+    %%
+    
+    figure;
+    errorbar(repmat(xvals,1,2),squeeze(mean(detectionPerf)),squeeze(std(detectionPerf)));
+    line(xlims,[50 50],'Color','k','LineStyle','--');
+    line(xlims,[75 75],'Color','k','LineStyle',':');
+    
+    legend({'Control' 'Drug' 'Chance' 'Threshold'},'Location',legendLocation);
+    
+    %%
+    
+    xlabel(xlab);
+    xlim(xlims);
+    
+    ylabel('Decoder Performance (%)');
+    ylim([25 100])
+    
+    set(gca,'XScale',xscale,'XTick',xticks,'XTickLabel',xticklabels);
+    
+    %%
+    
+    figFile = ['gratings_perf_vs_' independentVariable '_decoder_' decoder saveFileSuffix];
+    saveas(gcf,figFile,'fig');
+    saveas(gcf,figFile,'png');
+    close(gcf);
+end

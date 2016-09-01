@@ -1,0 +1,19 @@
+function reanalyseExperiment(retina,drug,concs,volts,detectionRecordings)
+
+    drug = '18BGA';
+    concs = [0 0 0 0 0 0 10 20 40 80 80 80 80 80 80 0]';
+    volts = [6 7 8 9 10 8 8 8 8 6 7 8 9 10 8 8]';
+    stims = cell(16,1);
+    for ii = 1:16
+        stims{ii} = sprintf('Stim %d %d %s %dV',ii,concs(ii),drug,volts(ii));
+    end
+    concatenateSpikeTimesAndStimulusTimes(stims,'Retina A');
+    batchFiles = cell(16,1);
+    batchFiles(setdiff(1:16,[6 15])) = repmat({'V:\retina\John B\phd backup\csharp\uledctrl\bin\Debug\stim_file_20140508_1.bat'},14,1);
+    batchFiles([6 15]) = repmat({'V:\retina\John B\phd backup\csharp\uledctrl\bin\Debug\stim_file_20140710_2.bat'},2,1);
+    [~,nTriggerss,stimSpecs,specIndices] = parseULEDArrayBatchFiles(batchFiles);
+    getStimulusTimesAndConditionsFromTriggersAndStimFiles('Retina A_vsync_times.mat',stimSpecs,specIndices,nTriggerss,{'r' 'r' 'm'},{'full field sequence' 'flashing squares sequence' 'moving bars sequence'})
+    detectULEDResponsiveCells('A');
+    uledSTA('A','flashing squares',[3 11]);
+    movingBarAnalysis('A',[3 11]);
+end

@@ -1,0 +1,3 @@
+function nTriggers = parseULEDArrayStimFile(filename)
+    [fileDir,f
+end

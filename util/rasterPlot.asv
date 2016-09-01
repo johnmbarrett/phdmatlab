@@ -1,0 +1,295 @@
+function [figs,lines,edges,hists,trials,subs,nSpikess] = rasterPlot(fig,varargin) %spikeTimes,stimulusTimes,conditions,tmin,tmax,isPSTH,bw,groups,varNames,isHz)
+    isHandle = numel(fig) == 1 && ishandle(fig);
+    
+    noPlot = false;
+    if isHandle
+        args = varargin;
+        handleType = get(fig,'type');
+        
+        if ~strcmp(handleType,'figure')
+            error('Unknown handle type');
+        end
+        
+        f = fig;
+        set(f,'Visible','off');
+        clf;
+    elseif (islogical(fig) && ~fig) || any(isnan(fig))
+        noPlot = true;
+        args = varargin;
+    else
+        args = {fig varargin{:}}; %#ok<CCAT>
+        f = figure('Visible','off');
+    end
+    
+    nargin = numel(args);
+    
+    if nargin < 2
+        error('rasterPlot needs, at bare minimum, vectors of spike times & stimulus times');
+    end
+    
+    if nargin < 10
+        isHz = true;
+    else
+        isHz = all(logical(args{10}));
+    end
+    
+    spikeTimes = args{1};
+    stimulusTimes = args{2};
+    
+    if nargin < 9
+        varNames = NaN;
+    else
+        varNames = args{9};
+    end
+    
+    if nargin < 8 || isempty(args{8})
+        groups = ones(size(stimulusTimes));
+    else
+        groups = args{8};
+    end
+    
+    nVars = size(groups,2)+1-isequal(groups,ones(size(groups)));
+    if ~iscell(varNames) || numel(varNames) ~= nVars
+        varNames = cellstr([repmat('Var ',nVars) num2str((1:nVars)')]);
+    end
+    
+    uniqueGroups = unique(groups,'rows');
+    nGroups = size(uniqueGroups,1);
+    
+    if noPlot
+        figs = NaN;
+    else
+        figs = ones(nGroups,1);
+        figs(1) = f;
+
+        for ii = 2:nGroups
+            figs(ii) = figure('Visible','off');
+        end
+    end
+        
+    if nargin < 7
+        bw = 0.01;
+    else
+        bw = args{7};
+    end
+
+    if nargin < 6
+        isPSTH = false;
+    else
+        isPSTH = args{6};
+    end
+
+    if nargin < 5
+        if nargin < 4
+            ts = [0; 1];
+        else
+            ts = args{4};
+        end
+    else
+        ts = [args{4}; args{5}];
+        ts = ts(isfinite(ts));
+    end
+    
+    if ~ismember(0,ts)
+        ts(end+1) = 0;
+    end
+    
+    ts = sort(ts);
+    ts = ts(:);
+    
+    if nargin < 3
+        conditions = ones(size(stimulusTimes));
+    else
+        conditions = args{3};
+    
+        if size(conditions,1) ~= size(stimulusTimes,1)
+            error('Number of condition specifiers must match the number of stimuli');
+        end
+        
+        if iscell(varNames{1}) && size(conditions,2) ~= numel(varNames{1})
+            error('Number of sub-conditions must match number of variable names');
+        end 
+    end
+
+    % suppress annoying warning
+    if iscell(conditions)
+        uniqueConditions = unique(conditions);
+    else
+        uniqueConditions = unique(conditions,'rows');
+    end
+    
+    nConditions = size(uniqueConditions,1);
+    
+    trials = zeros(nConditions,nGroups);
+    
+    [rows,cols] = subplots(nConditions);
+    
+    lines = cell(nConditions,nGroups);
+    
+    if isPSTH
+        edges = ((floor(ts(1)/bw)*bw:bw:bw*ceil(ts(end)/bw)))';
+        hists = zeros(numel(edges),nConditions,nGroups);
+        nSpikess = cell(nConditions,nGroups);
+    else
+        edges = NaN;
+        hists = NaN;
+        nSpikess = zeros(0,nConditions,nGroups);
+    end
+    
+    for ii = 1:numel(stimulusTimes);
+        if iscell(varNames{1})
+            condition = find(ismember(uniqueConditions,conditions(ii,:),'rows'));
+        elseif iscell(uniqueConditions)
+            condition = find(strcmp(conditions(ii),uniqueConditions));
+        else
+            condition = find(uniqueConditions == conditions(ii));
+        end
+        
+        group = ismember(uniqueGroups,groups(ii,:),'rows');
+        
+%         figure(figs(group));
+%         
+%         subplot(rows,cols,condition);
+        
+        trials(condition,group) = trials(condition,group)+1;
+        
+        stimulusTime = stimulusTimes(ii);
+        spikesInTrial = spikeTimes(spikeTimes >= stimulusTime+ts(1) & spikeTimes < stimulusTime+ts(end))-stimulusTime;
+        
+        lines{condition,group}{end+1} = spikesInTrial;
+        
+        if ~isPSTH
+            nSpikes = numel(spikesInTrial);
+            
+            if size(nSpikess,1) < trials(condition,group)
+                nSpikess(end+1,condition,group) = nSpikes; %#ok<AGROW>
+            else
+                nSpikess(trials(condition,group),condition,group) = nSpikes;
+            end
+        else
+            if ~isempty(spikesInTrial)
+                nSpikes = reshape(histc(spikesInTrial,edges),numel(edges),1);
+            else
+                nSpikes = zeros(numel(edges,1));
+            end
+        
+            nSpikess(end+1,:,condition,group) = nSpikes; %#ok<AGROW>
+            hists(:,condition,group) = hists(:,condition,group) + nSpikes';
+        else
+            nSpikes
+        end
+    end
+    
+    if isPSTH
+        hists = hists(1:end-1,:,:);
+        
+        if isHz
+            hists = hists./(repmat(reshape(trials,[1 nConditions nGroups]),numel(edges)-1,1)*bw);
+        end
+        
+        maxH = max(max(max(hists)));
+    else
+        maxH = 0;
+    end
+    
+    if noPlot
+        return;
+    end
+    
+    subs = zeros(nConditions,nGroups);
+    
+    for hh = 1:nGroups
+        set(0,'CurrentFigure',figs(hh));
+        
+        for ii = 1:nConditions
+            if trials(ii,hh) == 0
+                continue;
+            end
+            
+            subs(ii,hh) = subplot(rows,cols,ii);
+            xlim(ts([1 end]));
+
+            trialOffset = maxH;
+
+            if isPSTH && maxH > 0
+                trialHeight = maxH/trials(ii,hh);
+                yy = [0 2*maxH];
+            else
+                trialHeight = 1;
+                yy = [0 trials(ii,hh)];
+            end
+            
+            ylim(yy);
+
+            hold on;
+
+            if numel(ts > 2)
+                line(repmat(ts(2:end-1)',2,1),repmat(yy',1,numel(ts)-2),'Color','k','LineStyle','--');
+            end
+
+            for jj = 1:trials(ii,hh)
+                spikesInTrial = lines{ii,hh}{jj};
+
+                if isempty(spikesInTrial)
+                    continue;
+                end
+
+                line( ...
+                    repmat(spikesInTrial(:)',2,1), ...
+                    repmat((jj-[1; 0])*trialHeight+trialOffset,1,numel(spikesInTrial)), ...
+                    'Color',    'b' ...
+                    );
+            end
+
+            if isPSTH
+                bar(edges(1:end-1),hists(:,ii,hh),'histc');
+            end
+            
+            if ~iscell(varNames{1})
+                conditionVars = varNames(1);
+            else
+                conditionVars = varNames{1};
+            end
+            
+            tit = '';
+            for jj = 1:numel(conditionVars)
+                if iscell(uniqueConditions)
+                    tit = sprintf('%s, %s = %s',tit,conditionVars{jj},uniqueConditions{ii,jj});
+                elseif mod(uniqueConditions(ii,jj),1) == 0
+                    tit = sprintf('%s, %s = %d',tit,conditionVars{jj},uniqueConditions(ii,jj));
+                else
+                    tit = sprintf('%s, %s = %f',tit,conditionVars{jj},uniqueConditions(ii,jj));
+                end
+            end
+            title(tit(3:end));
+            
+            if ii == (rows-1)*cols+1
+                xlabel('Time/s');
+                
+                if isPSTH
+                    if isHz
+                        ylabel('Firing Rate/Hz');
+                    else
+                        ylabel('Spikes/Bin');
+                    end
+                else
+                    ylabel('Trials');
+                end
+            end
+        end
+        
+        supertitle = '';
+        
+        for ii = 2:nVars
+            if mod(uniqueGroups(hh,ii-1),1) == 0
+                dataType = 'd';
+            else
+                dataType = 'f';
+            end
+            
+            supertitle = sprintf(['%s' repmat(', ',1,ii > 2) '%s = %' dataType],supertitle,varNames{ii},uniqueGroups(hh,ii-1));
+        end
+        
+        suptitle(supertitle);
+    end
+end

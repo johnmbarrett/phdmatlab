@@ -1,0 +1,79 @@
+pws = [5 10 25 50 75 100];
+nPWs = numel(pws);
+reps = 10;
+outfileprefix = 'stim_file_20140710';
+totalTime = 0;
+ISI = 60;
+% fout = 1;
+
+%% RECEPTIVE FIELDS
+sizes = [1 2 4];
+xs = 0:15;
+ys = 0:15;
+
+conditions = zeros(0,3);
+
+for ii = 1:numel(sizes)
+    n = 16-sizes(ii)+1;
+    
+    conditions = [conditions; ...
+            repmat(xs(1:end-sizes(ii)+1)',n,1) ...
+            kron(ys(1:end-size(ii)+1)',ones(n,1)) ...
+            size(ii) ...
+        ]; %#ok<AGROW>
+    endk
+
+sizes = [1 2];
+conditions = [repmat(1:nPWs,1,2); kron(sizes,ones(1,nPWs))]';
+conditionOrder = [];
+
+for ii = 1:reps
+    conditionOrder = [conditionOrder; conditions(randperm(size(conditions,1)),:)]; %#ok<AGROW>
+end
+
+quadrants = [0 0; 1 1; 0 1; 1 0];
+mask = 3;
+
+fout = fopen(sprintf('%s_%d.txt',outfileprefix,4),'w');
+
+I = zeros(16,16,1,sum((16./sizes).^2)*nPWs*reps);
+
+nn = 0;
+for hh = 1:size(conditionOrder,1)
+    pw = pws(conditionOrder(hh,1));
+    s = conditionOrder(hh,2);
+    pd = pws(end)-pw;
+    
+    for ii = 1:16/s
+        for jj = 1:16/s
+            ledIndex = sub2ind([16 16],jj,ii);
+            x = 0;
+            y = 0;
+
+            for kk = 1:5-s
+                bits = 2*(kk-1);
+                quadIndex = bitshift(bitand(ledIndex-1,bitshift(mask,bits)),-bits);
+
+                quad = quadrants(quadIndex+1,:);
+                shift = 2^(4-kk);
+
+                x = x + shift*quad(1);
+                y = y + shift*quad(2);
+            end
+
+            nn = nn + 1;
+%             I(x+(1:s),y+(1:s),1,nn) = 254;
+            fprintf(fout,'r %d %d %d %d %d\r\n',x,y,s,s,pw);
+            
+            if pd > 0
+                fprintf(fout,'b %d\r\n',pd);
+            end
+        end
+    end
+end
+
+fclose(fout);
+
+stimTime = nn*pws(end)/1000;
+disp(stimTime/60);
+totalTime = totalTime + stimTime + ISI;

@@ -1,0 +1,4 @@
+createCStimBatchFile(ceil(1000*2.^(4:6)/60),10,[255 255 255],5,10,'V:\retina\John B\phd backup\cpp\cstimxp\cstimxp\Release','V:\retina\John B\phd backup\matlab\stimuli\stim_file_20130212_7.bat','D:\John B\Electrophys\Testing\Photodiode 01\Stim 7','cstimxp.exe');
+createCStimBatchFile(ceil(1000*2.^(4:6)/60),10,[255 255 255],5,10,'V:\retina\John B\phd backup\cpp\cstimxp\cstimxp\Release','V:\retina\John B\phd backup\matlab\stimuli\stim_file_20130212_8.bat','D:\John B\Electrophys\Testing\Photodiode 01\Stim 8','cstimxp.exe');
+% createCStimBatchFile(ceil(1000*2.^(4:6)/60),10,[255 255 255],5,10,'D:\backup\phd\cpp\cstim\cstim\x64\Release','V:\retina\John B\phd backup\matlab\stimuli\stim_file_20130205_3.bat','D:\temp\Stim 3');
+% createCStimBatchFile(ceil(1000*2.^(4:6)/60),10,[255 255 255],5,10,'D:\backup\phd\cpp\cstim\cstim\x64\Release','V:\retina\John B\phd backup\matlab\stimuli\stim_file_20130205_4.bat','D:\temp\Stim 4');

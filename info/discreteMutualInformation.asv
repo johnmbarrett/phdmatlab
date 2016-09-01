@@ -1,0 +1,29 @@
+function I = discreteMutualInformation(x,y)
+    assert(isequal(numel(x),numel(y)),'There must be the same number of observations for each variable');
+    
+    if isempty(x) || isempty(y)
+        I = 0;
+        return;
+    end
+    
+    valid = ~isnan(x) & ~isnan(y);
+    [~,~,x] = unique(x(valid));
+    [~,~,y] = unique(y(valid));
+    
+    tic;
+    [pxy,nx,ny] = ejpmf(x,y);
+    toc;
+    
+    tic;
+    px = epmf(x);
+    py = epmf(y);
+    toc;
+    
+    tic;
+    pxpy = repmat(px,1,ny).*repmat(py',nx,1);
+    toc;
+    
+    tic;
+    I = sum(sum(plogq(pxy,pxy./pxpy)));
+    toc;
+end

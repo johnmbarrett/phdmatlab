@@ -1,0 +1,76 @@
+function [x,y] = ellipseIntersect(A1,B1,x1,y1,phi1,A2,B2,x2,y2,phi2)
+    function theta = solveAcostBsintEqualsC(A,B,C)
+        R = [-1 1]*sqrt(A.^2+B.^2);
+        alpha = atan2(B,A);
+        theta = acos(C/R)+alpha;
+    end
+
+    x = solveAcostBsintEqualsC( ...
+        A1*cos(phi1)-A2*cos(phi2),  ...
+        B2*sin(phi2)-B1*sin(phi2),  ...
+        x2-x1                       ...
+        );
+    
+    y = solveAcostBsintEqualsC( ...
+        A1*sin(phi1)-A2*sin(phi2),  ...
+        B1*sin(phi2)-B1*sin(phi2),  ...
+        x2-x1                       ...
+        );
+
+    return;
+    
+    xbar = [x1 x2]-mean([x1 x2]);
+    ybar = [y1 y2]-mean([y1 y2]);
+    
+    [mats,AA,BB,CC,DD,EE,FF] = ellipseImplicitPolynomial([A1 A2],[B1 B2],xbar,ybar,[phi1 phi2]);
+    A = mats(:,:,1);
+    B = mats(:,:,2);
+    
+    position = ellipseCase(A,B,AA,BB,CC,DD,EE,FF);
+    
+    if position == 10
+        area = pi*A1*B1;
+        return;
+    end
+    
+    if ismember(position,[3 6])
+        area = 0;
+        return;
+    end
+    
+    if ismember(position,[4 7 8])
+        area = pi*min(A1*B1,A2*B2);
+        return;
+    end
+    
+    cy4 = (BB(1)*CC(2)-CC(1)*BB(2))*(AA(1)*BB(2)-BB(1)*AA(2)) ...
+        - (AA(1)*CC(2)-CC(1)*AA(2))^2;
+    
+    cy3 = 2*(EE(1)*AA(2)-AA(1)*EE(2))*(AA(1)*CC(2)-CC(1)*AA(2)) ...
+        + (DD(1)*CC(2)+BB(1)*EE(2)-EE(1)*BB(2)-CC(1)*DD(2)) ...
+        * (AA(1)*BB(2)-BB(1)*AA(2))+(BB(1)*CC(2)-CC(1)*BB(2)) ...
+        * (AA(1)*DD(2)-DD(1)*AA(2));
+        
+    cy2 = 2*(FF(1)*AA(2)-AA(1)*FF(2))*(AA(1)*CC(2)-CC(1)*AA(2)) ...
+        + (DD(1)*EE(2)+BB(1)*FF(2)-FF(1)*BB(2) ...
+        - EE(1)*DD(2))*(AA(1)*BB(2)-BB(1)*AA(2)) ...
+        + (DD(1)*CC(2)+BB(1)*EE(2)-EE(1)*BB(2)-CC(1)*DD(2)) ...
+        * (AA(1)*DD(2)-DD(1)*AA(2))-(AA(1)*EE(2)-EE(1)*AA(2))^2; ...
+    
+    cy1 = (2)*(FF(1)*AA(2)-AA(1)*FF(2))*(AA(1)*EE(2)-EE(1)*AA(2)) ...
+        + (DD(1)*EE(2)+BB(1)*FF(2)-FF(1)*BB(2)-EE(1)*DD(2)) ...
+        * (AA(1)*DD(2)-DD(1)*AA(2)) ...
+        + (DD(1)*FF(2)-FF(1)*DD(2))*(AA(1)*BB(2)-BB(1)*AA(2)); ...
+        
+    cy0 = (DD(1)*FF(2)-FF(1)*DD(2))*(AA(1)*DD(2)-DD(1)*AA(2)) ...
+        - (AA(1)*FF(2)-FF(1)*AA(2))^2;
+        
+    y = roots([cy4 cy3 cy2 cy1 cy0]);
+    
+    ybar = (AA(1)*(CC(2)*y.^2+EE(2)*y+FF(2))-AA(2)*(CC(2)*y.^2+EE(1)*y+FF(1))) ...
+        ./ (AA(2)*(BB(1)*y+DD(1))-AA(1)*(BB(2)*y+DD(2)));
+     
+    sqrt4ac = AA(2)*sqrt((BB(1)*ybar+DD(1)).^2-4*AA(1)*(CC(1)*ybar.^2+EE(1)*ybar+FF(1)));
+    
+    xbar = (-repmat((BB(1)*ybar+DD(1)),1,2)+repmat([-1 1],4,1).*repmat(sqrt4ac,1,2))/2*AA(1);
+end

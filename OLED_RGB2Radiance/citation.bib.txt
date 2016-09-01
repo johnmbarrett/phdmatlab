@@ -1,0 +1,12 @@
+@article{Cooper23102013,
+author = {Cooper, Emily A. and Jiang, Haomiao and Vildavski, Vladimir and Farrell, Joyce E. and Norcia, Anthony M.}, 
+title = {Assessment of OLED displays for vision research},
+volume = {13}, 
+number = {12}, 
+year = {2013}, 
+doi = {10.1167/13.12.16}, 
+abstract ={Vision researchers rely on visual display technology for the presentation of stimuli to human and nonhuman observers. Verifying that the desired and displayed visual patterns match along dimensions such as luminance, spectrum, and spatial and temporal frequency is an essential part of developing controlled experiments. With cathode-ray tubes (CRTs) becoming virtually unavailable on the commercial market, it is useful to determine the characteristics of newly available displays based on organic light emitting diode (OLED) panels to determine how well they may serve to produce visual stimuli. This report describes a series of measurements summarizing the properties of images displayed on two commercially available OLED displays: the Sony Trimaster EL BVM-F250 and PVM-2541. The results show that the OLED displays have large contrast ratios, wide color gamuts, and precise, well-behaved temporal responses. Correct adjustment of the settings on both models produced luminance nonlinearities that were well predicted by a power function (“gamma correction”). Both displays have adjustable pixel independence and can be set to have little to no spatial pixel interactions. OLED displays appear to be a suitable, or even preferable, option for many vision research applications.}, 
+URL = {http://www.journalofvision.org/content/13/12/16.abstract}, 
+eprint = {http://www.journalofvision.org/content/13/12/16.full.pdf+html}, 
+journal = {Journal of Vision} 
+}

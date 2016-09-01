@@ -1,0 +1,24 @@
+function I = contrastGratingsMutualInformationSingleNeuron(sigma,mu,lambda)
+    sizeLambda = size(lambda);
+    lambda = lambda(:);
+    nl = numel(lambda);
+    Hs = zeros(nl,1);
+    H = zeros(nl,1);
+    x = 0:170;
+    
+    mpdf = poisspdf(x,mu+sigma);
+    gpdf = arrayfun(@(l) poisspdf(x,l+sigma),'UniformOutput',false);
+    
+    Gs = cellfun(@(pdf) -mean(sum([
+
+    for ii = 1:nl
+        gpdf = poisspdf(x,lambda(ii)+sigma);
+        
+        Hs(ii) = -mean(sum([plogp(gpdf) plogp(mpdf)]),2);
+        H(ii) = -sum(plogp(mean([gpdf mpdf],2)));
+    end
+
+    I = H - Hs;
+    
+    reshape(I,sizeLambda);
+end

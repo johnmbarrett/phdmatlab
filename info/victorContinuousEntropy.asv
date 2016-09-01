@@ -1,0 +1,7 @@
+function H = victorContinuousEntropy(x)
+    [N,d] = size(x);
+    
+    x = reshape(x,[N 1 d]);
+    
+    lambda = repmat(x,1,N,1)-
+end

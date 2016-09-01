@@ -1,0 +1,26 @@
+lambdaS = 1:8;
+p = lambdaS/9;
+
+lambda = 4.5;
+q = 0.5;
+
+K = p.*(log(p)-log(q)) + (1-p).*(log(1-p)-log(1-q)) + ...
+    p.*(log(lambdaS)-log(lambda)+lambda./lambdaS-1);
+
+%%
+
+x = binornd(1,q,1000,1);
+y = Inf(size(x));
+y(x == 1) = exprnd(1/lambda,sum(x == 1),1);
+Q = {
+
+%%
+
+Khat = zeros(8,1);
+
+for ii = 1:8
+    xs = binornd(1,p(ii),125,1);
+    ys = Inf(size(xs));
+    ys(xs == 1) = exprnd(1/lambdaS(ii),125,1);
+    
+    Khat(ii) = mixedKLDivergence({ys == 

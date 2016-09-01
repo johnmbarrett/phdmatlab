@@ -1,0 +1,26 @@
+function [h,mleN,ciN,mleT,ciT] = poisson_fixed_time_test(lambda,n,T)
+    if nargin < 3
+        T = 1;
+    end
+    
+    if nargin < 2
+        n = 1000;
+    end
+    
+    if nargin < 1
+        lambda = 1;
+    end
+    
+    ts = poisson_fixed_time(lambda*on,T);
+    
+    nts = cellfun(@numel,ts);
+    
+    [mleN,ciN] = mle(nts,'Distribution','poiss');
+    
+    dts = cell(size(ts));
+    dts(nts > 1) = cellfun(@diff,ts(nts > 1),'UniformOutput',false);
+    
+    [mleT,ciT] = mle(dts,'Distribution','exp');
+    
+    h = ciN(1) <= lambda <= ciN(2) && ciT(1) <= lambda <= ciT(2);
+end

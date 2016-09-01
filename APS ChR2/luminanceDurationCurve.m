@@ -1,0 +1,184 @@
+load('channelNames.mat');
+load('EventNo.mat');
+load('spiketimestamps.mat');
+
+if exist('./ChR2_cells_grey.mat','file')
+    load('ChR2_cells_grey.mat');
+elseif exist('./ChR2_cells_ff.mat','file')
+    load('ChR2_cells_ff.mat');
+elseif exist('./ChR2_cells.mat','file')
+    load('ChR2_cells.mat');
+else
+    error('Run detectChR2ResponsiveCells first!');
+end
+
+%%
+
+stimulusFile = 'V:\retina\John B\phd backup\aps stimuli\ChR2 stim test\full fields\sequence.mat';
+load(stimulusFile);
+
+%%
+
+nCells = numel(bestUnits);
+
+% TODO : multiple
+greyRecording = 6;
+
+l = (31:32:255)';
+nl = numel(l);
+t = 1000*[1 2 4 8 15 30]'/30;
+nt = numel(t);
+
+saveFile = sprintf('Stim %d\\grey_responses.mat',greyRecording);
+
+%%
+
+allNSpikes = cell(nCells,nl,nt);
+
+%%
+
+frameTimes = EventNo{greyRecording};
+assert(numel(frameTimes) == 3e4);
+
+onsets = frameTimes(1:60:end);
+assert(numel(onsets) == numel(conditionOrder));
+
+%%
+
+included = conditionOrder <= nl*nt;
+mkdir(sprintf('Stim %d',greyRecording));
+
+for ii = 1:nCells
+    tic;
+    [figs,~,~,~,~,~,nSpikess] = rasterPlot(spiketimestamps{bestUnits(ii)},onsets(included),l(conditions(conditionOrder(included),2)),[-0.5 0 2 2.5],[],true,0.1,t(conditions(conditionOrder(included),1)),{'Luminance' 'Duration'},true);
+    
+    allNSpikes(ii,:,:) = nSpikess;
+    
+%     spontFR(ii) = sum(sum(cellfun(@(n) sum(sum(n(:,16:25))),nSpikess)))/48;
+%     peakFR(ii,:,:,:) = cell2mat(reshape(cellfun(@(n) sum(n(:,6:15),2),nSpikess,'UniformOutput',false),[1 nl nt]));
+%     pResp(ii,:,:) = sum(peakFR(ii,:,:,:) > repmat(spontFR(ii),[1 10 nl nt]));
+    
+    unitName = channelNames{1,bestUnits(ii)};
+    
+    figPrefix = sprintf('Stim %d\\greyraster_channel_%s_cluster_%s',greyRecording,unitName(1:7),unitName(end));
+    for jj = 1:numel(figs);
+        figFile = sprintf('%s_duration_%dms',figPrefix,round(t(jj)));
+        saveas(figs(jj),figFile,'fig');
+        saveas(figs(jj),figFile,'png');
+        close(figs(jj));
+    end
+    
+    toc;
+end
+
+
+save(saveFile,'-v7.3','allNSpikes');
+
+%%
+
+load(saveFile,'allNSpikes');
+
+%%
+
+allFR = cell2mat(reshape(cellfun(@(n) sum(n(:,6:15),2),allNSpikes,'UniformOutput',false),[1 nCells nl nt]));
+meanFR = squeeze(mean(allFR));
+peakFR = cellfun(@(n) max(sum(n(:,6:15))),allNSpikes);
+
+%%
+
+spontHist = cell2mat(reshape(permute(cellfun(@(n) reshape(n(:,16:25),100,1),allNSpikes,'UniformOutput',false),[2 3 1]),nl*nt,nCells));
+spontFR = sum(spontHist)'/480;
+
+%%
+
+doubleSigmoid = @(p,X) max(0,p(1)*(1./(1+exp(-p(2)*X(:,1).*(p(3)*X(:,2)-p(4))))-0.5));
+
+thresh = spontFR;
+params = zeros(nCells,4);
+mses = zeros(nCells,1);
+[L,T] = ndgrid(l,t);
+X = kron([T(:) L(:)],ones(10,1));
+A = [-1 0 0 0; zeros(3,4)];
+b = zeros(4,1);
+options = optimset('Algorithm','interior-point');
+gs = GlobalSearch;
+
+%%
+
+for ii = 1:nCells
+    tic;
+    Y = allFR(:,ii,:,:);
+    y = Y(:);
+    
+    mseFun = @(p) mean((y-doubleSigmoid(p,X)).^2);
+    nonlcon = @(x) sdCurveNonlinearConstraint(x,thresh(ii));
+
+%     [p,f] = fmincon(mseFun,[2*max(y);2/250;2/250;0],[],[],[],[],[0;0;0;0],[Inf;Inf;Inf;Inf],nonlcon,options);
+    problem = createOptimProblem('fmincon','objective',mseFun,'nonlcon',nonlcon,'x0',[2*max(y);2/250;2/250;realmin],'options',options);
+    [p,f] = run(gs,problem);
+
+    params(ii,:) = p';
+    mses(ii) = f;
+    toc;
+end
+
+%%
+
+rheobase = params(:,4)./params(:,3);
+
+s = thresh./params(:,1)+0.5;
+k = log(s./(1-s));
+
+chronaxie = k./(params(:,2).*params(:,4));
+
+%%
+
+save(saveFile,'-v7.3','-append','params','chronaxie','rheobase');
+
+%%
+
+load(saveFile,'params','chronaxie','rheobase');
+
+%%
+
+figure;
+set(gcf,'Position',[100 0 1120 840],'Renderer','zbuffer');
+
+datas = {meanFR peakFR};
+titles = {'Mean Firing Rate' 'Peak Firing Rate'};
+filePrefixes = {'meanfr' 'peakfr'};
+
+for ii = 1 %:nCells
+    tic;
+    unitName = channelNames{1,bestUnits(ii)};
+    
+    for jj = 1:2
+        subplot(2,2,jj);
+        surf(t,l,squeeze(datas{jj}(ii,:,:)));
+        view(2);
+        shading interp;
+        title(titles{jj});
+        xlim(1000./[30 1]);
+        ylim([31 255]);
+    end
+    
+    subplot(2,2,3);
+    ezsurf(@(x,y) doubleSigmoid(params(ii,:),[x y]),[0 1000 0 255]);
+    shading interp;
+    title('Double-Sigmoid Fit');
+    view(2);
+    xlabel('Duration (ms)');
+    ylabel('Pixel Value');
+    
+    subplot(2,2,4);
+    fplot(@(x) rheobase(ii).*(1+chronaxie(ii)./x),[0 1000])
+    title('Strength-Duration Curve');
+    ylim([0 255]);
+    
+    suptitle(sprintf('Threshold = %2.1fHz, rheobase = %4.1f, chronaxie = %4.1fms',spontFR(ii),rheobase(ii),chronaxie(ii)));
+    
+%     figFile = sprintf('Stim %d\\sdcurve_channel_%s_cluster_%s',greyRecording,unitName(1:7),unitName(8));
+%     saveas(gcf,figFile,'fig');
+%     saveas(gcf,figFile,'png');
+    toc;
+end

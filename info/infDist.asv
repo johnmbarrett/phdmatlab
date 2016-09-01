@@ -1,0 +1,10 @@
+function d = infDist(x,y,dim)
+    if nargin < 3
+        dim = find(ndims(;
+    end
+    
+    d = x-y;
+    d(isnan(d)) = 0;
+    d = sqrt(sum(d.^2,dim));
+end
+    

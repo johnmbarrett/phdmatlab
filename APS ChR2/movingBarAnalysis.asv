@@ -1,0 +1,350 @@
+function movingBarAnalysis(retina,useAllResponders)
+    if nargin < 2
+        useAllResponders = false;
+    end
+    
+    if nargin < 1 || isempty(retina) || all(isnan(retina))
+        isMCS = false;
+        filePrefix = '';
+        folderPrefix = '';
+    else
+        isMCS = true;
+        
+        if isnumeric(retina)
+            retina = char('A'+retina-1);
+        end
+        
+        filePrefix = sprintf('Retina %c_',retina);
+        folderPrefix = sprintf('Retina %c\\',retina);
+    end
+    %%
+
+    load([filePrefix 'channelNames.mat']);
+    load([filePrefix 'spiketimestamps']);
+    
+    if isMCS
+        load('moving bars sequence.mat');
+        load('Retina A_stimulusTimes.mat');
+
+        EventNo = onsetss; %#ok<USENS>
+
+        valid = cells(:,2) > 0; %#ok<NODEF>
+        spiketimestamps = spiketimestamps(valid); %#ok<NODEF>
+        channelNames = channelNames(:,valid); %#ok<NODEF>
+
+        ISIframes = 1;
+    else
+        load('bars sequence.mat');
+        load('EventNo.mat');
+    end
+
+    %%
+
+    ctrl_recording = 4+3*isMCS;
+    drug_recording = 7+10*isMCS;
+    recordings = [ctrl_recording drug_recording];
+
+    for ii = 1:2
+        mkdir(sprintf('%sStim %d',folderPrefix,recordings(ii)));
+    end
+
+    %%
+
+    units = cell(1,2);
+
+    if isMCS
+        load(['Retina ' retina '_uled_responsive_cells.mat']);
+        units{1} = intersect(responsive{3},responsive{11}); %#ok<USENS>
+        units{2} = units{1};
+    else
+        ctrl = load('ChR2_cells_bars_ctrl.mat','bestUnits');
+        drug = load('ChR2_cells_bars_drug.mat','bestUnits');
+
+        if useAllResponders
+            allUnits = union(ctrl.bestUnits,drug.bestUnits);
+
+            for ii = 1:2
+                units{ii} = allUnits;
+            end
+        else
+            units{1} = ctrl.bestUnits;
+            units{2} = drug.bestUnits;
+        end
+    end
+
+    nCells = cellfun(@numel,units);
+
+    %%
+
+    ifrs = arrayfun(@(n) cell(n,1),nCells,'UniformOutput',false);
+    kernel = normpdf(-125:125,0,25);
+    t0 = zeros(1,2);
+    idxfun = cell(1,2);
+
+    for ii = 1:2
+        assert(numel(EventNo{recordings(ii)}) == ISIframes*size(conditionOrder,1));
+
+        t0(ii) = EventNo{recordings(ii)}(1);
+        idxfun{ii} = @(t) floor(1000*(t-t0(ii)))+1;
+        t1 = EventNo{recordings(ii)}(end)+isMCS*2;
+        T = ceil(1000*(t1-t0(ii)))+1;
+
+        for jj = 1:nCells(ii)
+            tic;
+            ifr = zeros(T,1);
+            ts = idxfun{ii}(spiketimestamps{units{ii}(jj)});
+            ts = ts(ts > 0 & ts <= T);
+            [ut,~,idx] = unique(ts);
+            ifr(ut) = accumarray(idx,1);
+            ifr = conv(ifr,kernel,'same');
+            ifrs{ii}{jj} = ifr;
+            toc;
+        end
+    end
+
+    %%
+
+    if isMCS
+        pathTime = 15*period/1000;
+        speeds = (1000/16)./(period/1000)';
+    else
+        pathLength = 664+barWidth;
+        pathTime = pathLength./(speeds/4); %#ok<NODEF>
+    end
+
+    barStimuli = find(conditionOrder > 0 & conditionOrder <= size(conditions,1)); %#ok<NODEF>
+    onsets = cell(2,2);
+    directions = cell(2,1);
+    directionLabels = {'WE'; 'NWSE'; 'NS'; 'NESW'; 'EW'; 'SENW'; 'SN'; 'SWNE'};
+
+    if isMCS
+        directionLabels = sort(directionLabels);
+    end
+
+    for ii = 1:2
+        stimulusIndices = barStimuli(conditions(conditionOrder(barStimuli),3-isMCS) == ii);
+        directions{ii} = conditions(conditionOrder(stimulusIndices),2-isMCS);
+
+        for jj = 1:2
+            if isMCS
+                onsets{ii,jj} = onsetss{recordings(jj)}(stimulusIndices);
+            else
+                onsets{ii,jj} = EventNo{recordings(jj)}(150*(stimulusIndices-1)+1);
+            end
+        end
+    end
+
+    nStimuli = numel(barStimuli);
+
+    %%
+
+    nSpikesss = arrayfun(@(n) cell(n,2),nCells,'UniformOutput',false);
+
+    for gg = 1:2
+        for hh = 1:2
+            fig = figure;
+
+            for ii = 1:nCells(gg)
+                tic;
+                [fig,~,~,~,~,~,nSpikesss{gg}{ii,hh}] = rasterPlot(fig,spiketimestamps{units{gg}(ii)},onsets{hh,gg},directionLabels(directions{hh}),[-0.5 0 pathTime(hh)+[0 0.5]],[],true,0.1);
+                unitName = channelNames{1,units{gg}(ii)};
+                figFile = sprintf('%sStim %d\\barraster_channel_%s_cluster_%s_drug_%d_speed_%d',folderPrefix,recordings(gg),unitName(3:end-1),unitName(end),gg-1,hh);
+                saveas(fig,figFile,'fig');
+                saveas(fig,figFile,'png');
+                toc;
+            end
+
+            close(fig);
+        end
+    end
+
+    %%
+
+    trials = zeros(8,2,2);
+    ttps = arrayfun(@(n) zeros(10,8,2,n),nCells,'UniformOutput',false);
+
+    for hh = 1:2
+        for ii = 1:nStimuli
+            tic;
+            stimulusIndex = barStimuli(ii);
+            condition = conditions(conditionOrder(stimulusIndex),:);
+            direction = condition(2-isMCS);
+            speed = condition(3-isMCS);
+            trials(direction,speed,hh) = trials(direction,speed,hh) + 1;
+
+            if isMCS
+                tmin = EventNo{recordings(hh)}(stimulusIndex);
+            else
+                tmin = EventNo{recordings(hh)}(150*(stimulusIndex-1)+1);
+            end
+
+            imin = idxfun{hh}(tmin);
+            tmax = tmin + pathTime(speed);
+            imax = idxfun{hh}(tmax);
+
+            for jj = 1:nCells(hh)
+                [~,ipeak] = max(ifrs{hh}{jj}(imin:imax));
+                ttps{hh}(trials(direction,speed,hh),direction,speed,jj) = ipeak/1000;
+            end
+            toc;
+        end
+    end
+
+    %%
+
+    % rotfun = @(pd) mod((0:7)+pd-4,8)+1;
+    % rotatedTTPs = zeros(size(ttps));
+
+    modulationDepth = arrayfun(@(n) zeros(n,2),nCells,'UniformOutput',false);
+
+    for jj = 1:2
+        for ii = 1:nCells(jj)    
+            for kk = 1:2
+                tic;
+                meanTTP = squeeze(mean(ttps{jj}(:,:,kk,ii)));
+                [~,nullDir] = max(meanTTP);
+                [~,prefDir] = min(meanTTP);
+
+                maxResp = meanTTP(nullDir);
+                minResp = meanTTP(prefDir);
+
+                md = (maxResp-minResp)./(maxResp+minResp);
+                md(~isfinite(md)) = 0;
+
+                modulationDepth{jj}(ii,kk) = md;
+                toc;
+            end
+        end
+    end
+
+    %%
+
+    figure;
+    barwitherr(cell2mat(cellfun(@std,modulationDepth','UniformOutput',false)),cell2mat(cellfun(@mean,modulationDepth','UniformOutput',false)));
+    legend(arrayfun(@(s) sprintf('%d {\\mu}m/s',s),speeds,'UniformOutput',false),'Location','Best');
+    set(gca,'XTickLabel',{'Control' 'Drug'});
+    xlabel('Condition');
+    ylabel('Modulation Depth');
+
+    %%
+
+    saveas(gcf,[filePrefix 'bar_mod'],'fig');
+    saveas(gcf,[filePrefix 'bar_mod'],'png');
+    close(gcf);
+
+    %%
+
+    mutualInformation = arrayfun(@(n) zeros(n,2),nCells,'UniformOutput',false);
+
+    warningState = warning('query');
+    warning off; %#ok<WNOFF>
+
+    for hh = 1:2
+        for ii = 1:2
+            for jj = 1:nCells(hh)
+                tic;
+                X = struct('M',int32(8),'N',int32(1));
+                X.sites = struct('label',{channelNames(1,units{hh}(jj))},'recording_tag',{{'episodic'}},'time_scale',1,'time_resolution',1/7022,'si_unit','none','si_prefix',1);
+                X.categories = struct('label',{{'1'};{'2'};{'3'};{'4'};{'5'};{'6'};{'7'};{'8'}},'P',int32(10));
+
+                for kk = 1:8
+                    X.categories(kk).trials = struct('start_time',0,'end_time',pathTime(ii),'Q',num2cell(int32(ones(10,1))),'list',num2cell(ttps{hh}(:,kk,ii,jj)));
+                end
+
+                [data,counts,categories] = binlessopen(X);
+                warped = binlesswarp(data);
+                embedded = binlessembed(warped);
+
+                [~,~,~,I] = binlessinfo(embedded,counts,categories,X.M,struct('stratification_strategy',0,'singleton_strategy',0));
+                mutualInformation{hh}(jj,ii) = I.value;
+                toc;
+            end
+        end
+    end
+
+    warning(warningState);
+
+    %%
+
+    figure;
+    barwitherr(cell2mat(cellfun(@std,mutualInformation','UniformOutput',false)),cell2mat(cellfun(@mean,mutualInformation','UniformOutput',false)));
+    legend(arrayfun(@(s) sprintf('%d {\\mu}m/s',s),speeds,'UniformOutput',false),'Location','Best');
+    set(gca,'XTickLabel',{'Control' 'Drug'});
+    xlabel('Condition');
+    ylabel('Mutual Information (bits)');
+
+    %%
+
+    saveas(gcf,[filePrefix 'bar_info'],'fig');
+    saveas(gcf,[filePrefix 'bar_info'],'png');
+    close(gcf);
+
+    %%
+
+    decoderPerformance = zeros(2,2);
+    perfVUnits = cell(2,2);
+    subUnits = 2.^(0:nextpow2(min(nCells))-1);
+
+    x = kron((1:8)',ones(10,1));
+
+    for jj = 1:2
+        for kk = 1:2
+            tic;
+            y = reshape(ttps{jj}(:,:,kk,:),80,nCells(jj));
+            [fc,~,pvu] = simpleBayesianDecoder(x,y,[],subUnits,10);
+            decoderPerformance(jj,kk) = fc;
+            perfVUnits{jj,kk} = pvu;
+            toc;
+        end
+    end
+
+    perfVUnits = cell2mat(reshape(perfVUnits,[1 1 2 2]));
+
+    %%
+
+    figure;
+    bar(100*decoderPerformance);
+    line(xlim,[12.5 12.5],'Color','k','LineStyle','--');
+    legend([arrayfun(@(s) sprintf('%d {\\mu}m/s',s),speeds,'UniformOutput',false) {'Chance'}],'Location','Best');
+    set(gca,'XTickLabel',{'Control' 'Drug'});
+    xlabel('Condition');
+    ylabel('Decoder Performance (%)');
+
+    %%
+
+    saveas(gcf,[filePrefix 'bar_perf'],'fig');
+    saveas(gcf,[filePrefix 'bar_perf'],'png');
+    close(gcf);
+
+    %%
+
+    figure;
+    set(gcf,'Position',[680 558 800 420]);
+
+    xx = [0.8 2^nextpow2(max(nCells))];
+
+    for jj = 1:2
+        subplot(1,2,jj);
+        errorbar([repmat(subUnits',1,2);nCells],[squeeze(mean(100*perfVUnits(:,:,:,jj))); 100*decoderPerformance(:,jj)'],[squeeze(std(100*perfVUnits(:,:,:,jj))); 0 0]);
+        line(xx,[12.5 12.5],'Color','k','LineStyle','--');
+        set(gca,'XScale','log','XTick',[subUnits max(nCells)]);
+        title(sprintf('Speed = %d {\\mu}m/s',speeds(jj)));
+        xlim(xx);
+    end
+
+    legend({'Control' 'Drug' 'Chance'},'Location','Best');
+
+    subplot(1,2,1);
+    xlabel('# Cells');
+    ylabel('Decoder Performance (%)');
+
+    %%
+
+    saveas(gcf,[filePrefix 'bar_perf_vs_units','fig');
+    saveas(gcf,[filePrefix 'bar_perf_vs_units','png');
+    close(gcf);
+
+    %%
+
+    save('bar_responses.mat','-v7.3','ifrs','ttps','mutualInformation','modulationDepth','decoderPerformance','perfVUnits');
+end

@@ -1,0 +1,207 @@
+function K = continuousKLDivergence(p,q,k,method,informativeSingletons)
+    if nargin < 4
+        kldfun = @leonnenko;
+    else
+        if ~ischar(method)
+            error('Method must be one of ''leonnenko'', ''wang'' or ''both''.');
+        elseif strncmpi(method,'b',1)
+            kldfun = @both;    
+        elseif strncmpi(method,'l',1)
+            kldfun = @leonnenko;
+        elseif strncmpi(method,'w',1);
+            kldfun = @wang;
+        end
+    end
+            
+    if nargin < 3
+        k = 1;
+    end
+    
+    assert(size(p,2) == size(q,2),'ContinuousKLDivergence:DimensionalityMismatch','Dimensionality of both variables must be the same');
+    
+    d = size(p,2);
+    N = size(p,1);
+    M = size(q,1);
+    
+    if N == 0 % assume p(x) = 0 for all x
+        K = 0; % 0log(0/q) = 0
+        return
+    elseif M == 0 % assume q(x) = 0 for all x
+        K = Inf; % plog(p/0) = Inf;
+        return
+    end
+    
+    if N == 1
+        if ~informativeSingletons
+            K = 0;
+            return;
+        end
+        
+        if M == 1
+            if isequal(p,q)
+                % degenerate distributions with the same value
+                K = 0;
+                return
+            end
+            
+            % degenerate distributions with different values
+            K = Inf;
+            return
+        end
+        
+        % p degenerate & q not, so sift out -log(q(E(p))); if E(p) not in
+        % supp(q) then this will give Inf, as required
+        K = -log(sum(ismember(p,q,'rows'))/M);
+        return;
+    end
+    
+    K = kldfun(p,q,d,N,M,k,informativeSingletons);
+end
+
+function D = both(p,q,d,N,M,~,informativeSingletons)
+    assert(N > 1,'ContinuousKLDivergence:PUndersampled','P must contain at least two samples.');
+    assert(M > 0,'ContinuousKLDivergence:QUndersampled','Q must contain at least one sample.');
+    
+    [Z,ip,iz] = unique(p,'rows');
+    nZ = accumarray(iz,1);
+    iC = nZ == 1; % logical indexes in Z of singular spike trains
+%     Z = Z(~iC,:);
+    b = size(Z,1);
+%     
+%     nZ = nZ(~iC);
+    mZ = zeros(size(nZ));
+    iCq = true(M,1);
+    
+    for ii = 1:b
+        iZq = ismember(q,Z(ii,:),'rows');
+        iCq = iCq & ~iZq;
+        m = sum(iZq);
+        
+        if m > 0
+            iC(ii) = false;
+        end
+        
+        mZ(ii) = m;
+    end
+    
+    Cp = p(ip(iC),:); % ip is the row index in p of the first occurence of each member of Z
+    nC = size(Cp,1);
+    nZ = nZ(~iC);
+    
+    if nC > 0
+        nZ = [nZ(~iC); nC];
+    end
+    
+    Cq = q(iCq,:);
+    mC = size(Cq,1);
+    mZ = mZ(~iC);
+    
+    if nC > 0 && mC > 0
+        mZ(end+1) = mC];
+    end
+    
+    assert(all(nZ) > 0);
+    
+    NZ = sum(nZ);
+    MZ = sum(mZ);
+    
+    Dpartition = (nZ/NZ).*(log(nZ)-log(mZ)-log(NZ)+log(MZ));
+    
+    if ~informativeSingletons
+        % if any(nZ > 0 & mz == 0) Dpartition will be Inf, but if we're
+        % making maximally uninformative assumptions, assume that
+        % particular zero-distance subset occurs at the same rate in Q, but
+        % we just happened not to get any samples
+        Dpartition(Dpartition == Inf) = 0;
+    end
+    
+    Dpartition = sum(Dpartition);
+    
+    if nC == 0
+        D = Dpartition; % p(x) == 0 for all x => p(x)log p(x)/q(x) = 0 for all x
+        return;
+    elseif nC == 1
+        if ~informativeSingletons
+            % assume the continuous subset of p is a single draw from the
+            % same distribution as the continuous subset of q, in which
+            % case D(p||q) == 0
+            D = Dpartition;
+        elseif ~ismember(Cp,Cq,'rows')
+            % value in p that's not in q => infinite KLD
+            D = Inf;
+        else
+            % assume the continuous subset of p is drawn from a degenerate
+            % distribution, in which case the KLD is -log(q(y == Cp)) by
+            % the sifting property of the Dirac delta
+            D = Dpartition - log(sum(ismember(Cq,Cp,'rows'))/mC);
+        end
+        
+        return;
+    end
+        
+    Cp = reshape(Cp,[nC 1 d]);
+    Cq = reshape(Cq,[1 mC d]);
+    
+    rho = sqrt(sum((repmat(Cp,[1 nC 1])-repmat(permute(Cp,[2 1 3]),[nC 1 1])).^2,3));
+    nu = sqrt(sum((repmat(Cp,[1 mC 1])-repmat(Cq,[nC 1 1])).^2,3));
+    
+    rho = sort(rho,2);
+    nu = sort(nu,2);
+    
+    % when P is a subset of Q, nuMin will be all zeros & epsilon == rhoMin
+    rhoMin = rho(:,2);
+    nuMin = nu(:,1);
+    epsilon = max([rhoMin nuMin],[],2);
+    
+    L = rho(:,2:end) <= repmat(epsilon,1,nC-1);
+    K = nu <= repmat(epsilon,1,mC);
+    
+    l = sum(L,2);
+    k = sum(K,2);
+    
+    nuK = nu(sub2ind(size(nu),(1:nC)',k));
+    rhoL = rho(sub2ind(size(rho),(1:nC)',l+1));
+    
+    assert(all(rhoL > 0));
+    
+    % TODO : test
+    Dcontinuous = (d/nC)*sum(log(nuK) - log(rhoL)) ...
+        + mean(psi(l)-psi(k)) ...
+        + log(mC/(nC-1));
+    
+    % TODO : check use of the chain rule here
+    D = Dpartition + (nC/N)*Dcontinuous;
+end
+   
+function K = leonnenko(p,q,d,N,M,k,varargin)
+    assert(k < N,'ContinuousKLDivergence:PUndersampled','kNN parameter must be strictly less than the number of samples in P');
+    assert(k <= M,'ContinuousKLDivergence:QUndersampled','kNN parameter must be less than or equal to the number of samples in Q');
+    
+    % TODO : d > 1
+    rho = sort(sqrt((repmat(p,1,N)-repmat(p',N,1)).^2),2);
+    nu = sort(sqrt((repmat(p,1,M)-repmat(q',N,1)).^2),2);
+    
+    K = (d/N)*sum(log(nu(:,k))-log(rho(:,k+1)))+log(M/(N-1));
+end
+
+function [K,l,k] = wang(p,q,~,N,M,varargin)
+    assert(N > 1,'ContinuousKLDivergence:PUndersampled','P must contain at least two samples.');
+    assert(M > 0,'ContinuousKLDivergence:QUndersampled','Q must contain at least one sample.');
+    
+    % TODO : d > 1
+    rho = sort(sqrt((repmat(p,1,N)-repmat(p',N,1)).^2),2);
+    nu = sort(sqrt((repmat(p,1,M)-repmat(q',N,1)).^2),2);
+    
+    % when P is a subset of Q, nuMin will be all zeros & epsilon == rhoMin
+    rhoMin = rho(:,2);
+    nuMin = nu(:,1);
+    epsilon = max([rhoMin nuMin],[],2);
+    
+    l = rho(:,2:end) <= repmat(epsilon,1,N-1);
+    k = nu <= repmat(epsilon,1,M);
+    
+    l = sum(l,2);
+    k = sum(k,2);
+    
+    K = sum(psi(l)-psi(k))/N+log(M/(N-1));
+end

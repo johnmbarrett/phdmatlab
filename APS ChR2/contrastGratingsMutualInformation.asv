@@ -1,0 +1,33 @@
+function I = contrastGratingsMutualInformation(sigma,p,c,mu,lambda)
+    if nargin < 3
+        c = 0.1:0.1:0.6;
+    end
+    
+    if nargin < 5
+        lambdaFun = @(x) p(1).*normcdf(x,p(2),p(3)); %@(x) p(1)./(1+exp(-(x-p(2))/p(3)));
+        mu = lambdaFun(1); %polyval(p,m);
+        lambda = lambdaFun([1+c;1-c])'; %max(0,polyval(p,[m*(1+c);m*(1-c)]));
+    else
+        assert(isscalar(mu) && isnumeric(mu));
+        assert(ismatrix(mu) & 
+
+    %%
+
+    nc = numel(c);
+    Hs = zeros(nc,1);
+    H = zeros(nc,1);
+    n = 0:170;
+    [X,Y] = ndgrid(n,n);
+    X = X(:);
+    Y = Y(:);
+
+    for ii = 1:numel(c)
+        gpdf = poisspdf(X,lambda(ii,1)+sigma).*poisspdf(Y,lambda(ii,2)+sigma);
+        mpdf = poisspdf(X,mu+sigma).*poisspdf(Y,mu+sigma);
+        
+        Hs(ii) = -mean(sum([plogp(gpdf) plogp(mpdf)]),2);
+        H(ii) = -sum(plogp(mean([gpdf mpdf],2)));
+    end
+
+    I = H - Hs;
+end

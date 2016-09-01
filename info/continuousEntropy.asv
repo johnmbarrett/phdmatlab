@@ -1,0 +1,33 @@
+function H = continuousEntropy(x,k,method)
+    if nargin < 3 || ~ischar(method) || strncmpi(method,'v',1)
+        hfun = @victor;
+    elseif strncmpi(method,'l',1)
+        hfun = @leonnenko;
+    else
+        error('Method must be one of ''leonnenko'' or ''victor''.');
+    end
+    
+    [N,d] = size(x);
+    
+    assert(k < N,'kNN parameter must be stricly less than the number of samples.');
+    
+    x = reshape(x,[N 1 d]);
+    
+    rho = sort(sum((repmat(x,1,N,1)-repmat(permute(x,[2 1 3]),N,1,1)).^2,3),2);
+    
+    H = hfun(rho,N,d,k);
+end
+
+function H = leonnenko(rho,N,d,k)
+    V = pi.^(d/2)/gamma(d/2+1);
+    
+    epsilon = (N-1)*exp(-digamma(k))*rho(:,k+1).^d;
+    
+    H = sum(log(epsilon))/N;
+end
+    
+function H = victor(rho,N,d,k) 
+    S = d*pi.^(d/2)/gamma(d/2+1);
+    
+    H = (d/N).*sum(log(rho(:,k+1))+log(S*(N-1)/d)+0.5772156649015328606065120900824;
+end

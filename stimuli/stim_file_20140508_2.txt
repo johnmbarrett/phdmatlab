@@ -1,0 +1,320 @@
+m ew 50 2
+b 3300
+m nwse 50 2
+b 3300
+m we 100 2
+b 2600
+m nesw 100 2
+b 2600
+m ns 50 2
+b 3300
+m sn 100 2
+b 2600
+m senw 100 2
+b 2600
+m we 50 2
+b 3300
+m nwse 100 2
+b 2600
+m sn 50 2
+b 3300
+m nesw 50 2
+b 3300
+m ns 100 2
+b 2600
+m ew 100 2
+b 2600
+m swne 50 2
+b 3300
+m swne 100 2
+b 2600
+m senw 50 2
+b 3300
+m we 50 2
+b 3300
+m nesw 100 2
+b 2600
+m we 100 2
+b 2600
+m senw 50 2
+b 3300
+m swne 100 2
+b 2600
+m nwse 100 2
+b 2600
+m nwse 50 2
+b 3300
+m senw 100 2
+b 2600
+m swne 50 2
+b 3300
+m nesw 50 2
+b 3300
+m ns 50 2
+b 3300
+m ns 100 2
+b 2600
+m ew 50 2
+b 3300
+m sn 50 2
+b 3300
+m ew 100 2
+b 2600
+m sn 100 2
+b 2600
+m we 100 2
+b 2600
+m ns 50 2
+b 3300
+m we 50 2
+b 3300
+m senw 100 2
+b 2600
+m ns 100 2
+b 2600
+m nesw 50 2
+b 3300
+m ew 50 2
+b 3300
+m swne 100 2
+b 2600
+m senw 50 2
+b 3300
+m nwse 50 2
+b 3300
+m nwse 100 2
+b 2600
+m nesw 100 2
+b 2600
+m swne 50 2
+b 3300
+m sn 50 2
+b 3300
+m sn 100 2
+b 2600
+m ew 100 2
+b 2600
+m ew 50 2
+b 3300
+m nwse 100 2
+b 2600
+m sn 50 2
+b 3300
+m senw 50 2
+b 3300
+m ns 50 2
+b 3300
+m nesw 100 2
+b 2600
+m we 50 2
+b 3300
+m nwse 50 2
+b 3300
+m sn 100 2
+b 2600
+m swne 100 2
+b 2600
+m senw 100 2
+b 2600
+m we 100 2
+b 2600
+m ns 100 2
+b 2600
+m nesw 50 2
+b 3300
+m ew 100 2
+b 2600
+m swne 50 2
+b 3300
+m nesw 50 2
+b 3300
+m sn 100 2
+b 2600
+m ns 100 2
+b 2600
+m senw 100 2
+b 2600
+m senw 50 2
+b 3300
+m ew 50 2
+b 3300
+m we 100 2
+b 2600
+m nwse 50 2
+b 3300
+m ns 50 2
+b 3300
+m swne 100 2
+b 2600
+m swne 50 2
+b 3300
+m ew 100 2
+b 2600
+m we 50 2
+b 3300
+m nesw 100 2
+b 2600
+m nwse 100 2
+b 2600
+m sn 50 2
+b 3300
+m ew 50 2
+b 3300
+m sn 100 2
+b 2600
+m sn 50 2
+b 3300
+m nwse 50 2
+b 3300
+m nesw 50 2
+b 3300
+m swne 100 2
+b 2600
+m nesw 100 2
+b 2600
+m senw 100 2
+b 2600
+m ns 50 2
+b 3300
+m ns 100 2
+b 2600
+m nwse 100 2
+b 2600
+m we 100 2
+b 2600
+m senw 50 2
+b 3300
+m ew 100 2
+b 2600
+m we 50 2
+b 3300
+m swne 50 2
+b 3300
+m we 100 2
+b 2600
+m swne 100 2
+b 2600
+m sn 100 2
+b 2600
+m swne 50 2
+b 3300
+m ns 100 2
+b 2600
+m ns 50 2
+b 3300
+m senw 100 2
+b 2600
+m nesw 100 2
+b 2600
+m senw 50 2
+b 3300
+m we 50 2
+b 3300
+m nwse 100 2
+b 2600
+m nwse 50 2
+b 3300
+m ew 50 2
+b 3300
+m sn 50 2
+b 3300
+m nesw 50 2
+b 3300
+m ew 100 2
+b 2600
+m ns 100 2
+b 2600
+m swne 50 2
+b 3300
+m we 100 2
+b 2600
+m nwse 50 2
+b 3300
+m senw 100 2
+b 2600
+m nesw 50 2
+b 3300
+m sn 100 2
+b 2600
+m swne 100 2
+b 2600
+m nesw 100 2
+b 2600
+m nwse 100 2
+b 2600
+m ew 50 2
+b 3300
+m ns 50 2
+b 3300
+m we 50 2
+b 3300
+m ew 100 2
+b 2600
+m sn 50 2
+b 3300
+m senw 50 2
+b 3300
+m swne 100 2
+b 2600
+m nwse 100 2
+b 2600
+m sn 50 2
+b 3300
+m nwse 50 2
+b 3300
+m senw 100 2
+b 2600
+m ns 50 2
+b 3300
+m nesw 50 2
+b 3300
+m senw 50 2
+b 3300
+m ew 50 2
+b 3300
+m nesw 100 2
+b 2600
+m ns 100 2
+b 2600
+m swne 50 2
+b 3300
+m we 100 2
+b 2600
+m ew 100 2
+b 2600
+m sn 100 2
+b 2600
+m we 50 2
+b 3300
+m nesw 100 2
+b 2600
+m ns 50 2
+b 3300
+m ew 50 2
+b 3300
+m swne 50 2
+b 3300
+m ns 100 2
+b 2600
+m ew 100 2
+b 2600
+m nwse 50 2
+b 3300
+m swne 100 2
+b 2600
+m nesw 50 2
+b 3300
+m sn 100 2
+b 2600
+m nwse 100 2
+b 2600
+m sn 50 2
+b 3300
+m senw 50 2
+b 3300
+m we 50 2
+b 3300
+m we 100 2
+b 2600
+m senw 100 2
+b 2600

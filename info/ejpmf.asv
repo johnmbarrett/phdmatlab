@@ -1,0 +1,20 @@
+function p = ejpmf(x,y,nx,ny)
+    assert(isequal(numel(x),numel(y),'There must be the same number of observations for each variable'));
+    
+    n = 
+    
+    x = x(:);
+    y = y(:);
+    
+    valid = ~isnan(x) & ~isnan(y);
+    
+    x = x(valid);
+    y = y(valid);
+    
+    [ny,yValues] = getNBins(y);
+    [nx,xValues] = getNBins(x);
+    
+    f = zeros(nx,ny);
+    
+    for ii = 1:
+end

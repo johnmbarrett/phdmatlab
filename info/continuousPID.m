@@ -1,0 +1,213 @@
+function pid = continuousPID(s,R)
+    tic;
+    [N,nSources] = size(R);
+    
+    assert(N == numel(s),'There must be exactly one response observation for each stimulus presentation.');
+    
+    stimuli = unique(s);
+    nStimuli = numel(unique(s));
+    
+    kStimuli = zeros(nStimuli,1);
+    
+    for ii = 1:nStimuli
+        kStimuli(ii) = sum(s == stimuli(ii));
+    end
+    
+    pStimuli = kStimuli/N;
+    
+    individualInformation = zeros(nSources,1);
+    specificInformation = zeros(nStimuli,nSources);
+    
+    toc;
+    
+    for ii = 1:nSources
+        tic;
+        r = R(:,ii);
+        
+        noResponse = isinf(r);
+        nFin = sum(~noResponse);
+        
+        if nFin > 0
+            q = r(~noResponse);
+            badStimuli = false(nStimuli,1);
+            
+            for jj = 1:nStimuli
+                p = r(s == stimuli(jj) & ~noResponse);
+                
+                if isempty(p)
+                    specificInformation(jj,ii) = 0;
+                    continue;
+                end
+                    
+                if numel(p) == 1
+                    % As far as we know, the distribution of R conditional
+                    % on S = s is degenerate with mean r, in which case 
+                    % KLD(R|S=s||R) = -log(p(r)), by the sifting property
+                    % of the Dirac delta and the fact that KLD(P||Q) is the
+                    % entropy of P (here 0) less the cross-entropy of P &
+                    % Q. Our best guess of p(r) is 1/nFin
+                    specificInformation(jj,ii) = log(nFin);
+                    badStimuli(jj) = true;
+                    continue;
+                end
+                
+                specificInformation(jj,ii) = continuousKLDivergence(p,q,1,'b');
+            end
+            
+%             individualInformation(ii) = victorMutualInformation( ...
+%                 {s(noResponse) s(~noResponse)}, ...
+%                 {r(noResponse) r(~noResponse)}, ...
+%                 [1 0],                          ...
+%                 true                            ... or false?
+%                 );
+                
+            
+            x = s(~noResponse & ~ismember(s,stimuli(badStimuli)));
+            y = r(~noResponse & ~ismember(s,stimuli(badStimuli)));
+            
+            if isempty(x) || isempty(y)
+                individualInformation(ii) = 0;
+            else
+                % The same argument used for the specific information works
+                % here as well.  Note that I(S;R) is just the expectation over
+                % S of KLD(R|S=s||R).  Whenever R|S=s is degenerate, the
+                % contribution to the MI is then -p(s)*log(p(r)).  Note that to
+                % be consistent with the MI estimate for the non-degenerate
+                % cases, we must use p(s) conditional on the neuron responding,
+                % which is also 1/nFin.
+%                 individualInformation(ii) = victorMutualInformation(x,y,true);
+            end
+            
+%             individualInformation(ii) = individualInformation(ii) + sum(badStimuli)*log(nFin)/nFin;
+        end
+        
+        if nFin == N
+            continue;
+        end
+        
+        pFin = nFin/N;
+        pInf = 1-pFin;
+        pspr = [pFin*pStimuli pInf*pStimuli];
+        
+        sInf = s(noResponse);
+        sFin = s(~noResponse);
+        psr = zeros(nStimuli,2);
+        
+        for jj = 1:nStimuli
+            nFinS = sum(sFin == stimuli(jj));
+            nInfS = sum(sInf == stimuli(jj));
+            
+            psr(jj,1) = nFinS/N;
+            psr(jj,2) = nInfS/N;
+            
+            pFinS = nFinS/kStimuli(jj);
+            pInfS = nInfS/kStimuli(jj);
+            
+            specificInformation(jj,ii) = pFinS*specificInformation(jj,ii) + pFinS*log(pFinS/pFin) + pInfS*log(pInfS/pInf);
+        end
+        
+        individualInformation(ii) = pFin*individualInformation(ii) + sum(sum(psr.*plogp(psr./pspr)));
+        toc;
+    end
+    
+    nPairs = nSources*(nSources-1)/2;
+    
+    pairs = zeros(nPairs,2);
+    ensembleInformation = zeros(nPairs,1);
+    
+    n = 0;
+    for ii = 1:nSources-1
+        for jj = (ii+1):nSources
+            tic;
+            n = n+1;
+            pairs(n,:) = [ii jj];
+            
+            r = R(:,[ii jj]);
+            
+            noResponse = isinf(r);
+            
+            zeroResponses = noResponse(:,1) & noResponse(:,2);
+            bothResponses = ~(noResponse(:,1) | noResponse(:,2));
+            
+            oneResponse = [~noResponse(:,1) & noResponse(:,2) noResponse(:,1) & ~noResponse(:,2)];
+            responseIndices = [zeroResponses oneResponse bothResponses];
+            
+            x = {s(zeroResponses) s(oneResponse(:,1)) s(oneResponse(:,2)) s(bothResponses)};
+            y = {inf(sum(zeroResponses,1)) r(oneResponse(:,1),1) r(oneResponse(:,2),2) r(bothResponses,:)};
+            
+            ensembleInformation(n) = victorMutualInformation(x,y,[1 0 0 0],true);
+            
+            nResp = sum(responseIndices);
+          
+            if any(bothResponses)
+                badStimuli = false(nStimuli,1);
+                
+                for kk = 1:nStimuli
+                    badStimuli(kk) = sum(bothResponses & s == stimuli(kk)) == 1;
+                end
+                
+                x = s(bothResponses & ~ismember(s,stimuli(badStimuli)));
+                y = r(bothResponses & ~ismember(s,stimuli(badStimuli)),:);
+                
+                if isempty(x) || isempty(y)
+                    ensembleInformation(n) = 0;
+                else
+                    ensembleInformation(n) = victorMutualInformation(x,y,true);
+                end
+                
+                ensembleInformation(n) = ensembleInformation(n) + sum(badStimuli)*log(nResp(4))/nResp(4);
+            end
+            
+            if all(bothResponses)
+                continue;
+            end
+            
+            pResp = nResp/N;
+            
+            ensembleInformation(n) = pResp(4)*ensembleInformation(n);
+            
+            for kk = 1:2
+                if any(oneResponse(:,kk))
+                    badStimuli = false(nStimuli,1);
+                
+                    for ll = 1:nStimuli
+                        badStimuli(ll) = sum(oneResponse(:,kk) & s == stimuli(ll)) == 1;
+                    end
+                    
+                    x = s(oneResponse(:,kk) & ~ismember(s,stimuli(badStimuli)));
+                    y = r(oneResponse(:,kk) & ~ismember(s,stimuli(badStimuli)),kk);
+                    
+                    if isempty(x) || isempty(y)
+                        ensembleInformation(n) = 0;
+                    else
+                        ensembleInformation(n) = victorMutualInformation(x,y,true);
+                    end
+                    
+                    ensembleInformation(n) = pResp(kk+1)*(ensembleInformation(n))+sum(badStimuli)*log(nResp(kk+1))/nResp(kk+1);
+                end
+            end
+            
+            pspr = pStimuli*pResp;
+            psr = zeros(nStimuli,4);
+            
+            for ll = 1:4
+                for kk = 1:nStimuli
+                    psr(kk,ll) = sum(s(responseIndices(:,ll)) == stimuli(kk))/N;
+                end
+            end
+            
+            ensembleInformation(n) = ensembleInformation(n) + sum(sum(psr.*plogp(psr./pspr)));
+            toc;
+        end
+    end
+    
+    tic;
+    redundancy = (sum(repmat(pStimuli,1,n).*min(cat(3,specificInformation(:,pairs(:,1)),specificInformation(:,pairs(:,2))),[],3)))';
+    
+    uniqueInformation = [individualInformation(pairs(:,1)) individualInformation(pairs(:,2))]-repmat(redundancy,1,2);
+    
+    synergy = ensembleInformation-individualInformation(pairs(:,1))-individualInformation(pairs(:,2))+redundancy;
+    
+    pid = [redundancy uniqueInformation synergy ensembleInformation];
+    toc;
+end

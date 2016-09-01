@@ -1,0 +1,9 @@
+# stimulation modality: 1 = SequenceOfFrames || 2 = ListOfFrames || 3 = Video
+2
+# number of images of the stimulation sequence
+340
+# time interval [msec] of image displaying
+500
+# (optional only in case 2) sequence length
+3400
+# (optional only in case 2) sequence list (0-based index)

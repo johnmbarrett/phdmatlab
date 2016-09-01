@@ -1,0 +1,528 @@
+function [fractionCorrect,perfVTrials,perfVUnits] = simpleBayesianDecoder(s,R,subTrials,subUnits,nReps,model,lb,ub,trainPrior)
+    if nargin < 9
+        trainPrior = false;
+    end
+    
+    assert(numel(s) == size(R,1),'There must be the same number of observations for stimulus and response.');
+    
+    s = s(:);
+    
+    valid = ~isnan(s);
+    
+    if ~iscell(R)
+        valid = valid & ~any(isnan(R),2);
+    end
+    
+    
+    [u,~,s] = unique(s(valid));
+    R = R(valid,:);
+    
+    N = numel(s);
+    m = numel(u);
+    k = size(R,2);
+    
+    if nargin < 7
+        if iscell(R)
+            lb = min(cellfun(@(r) tertiaryop(isempty(r),Inf,min(r)),R(:)));
+        else
+            lb = min(R(:));
+        end
+    end
+        
+    if nargin < 8
+        if iscell(R)
+            ub = max(cellfun(@(r) tertiaryop(isempty(r),-Inf,max(r)),R(:)));
+        else
+            ub = max(R(:));
+        end
+    end
+    
+    if nargin < 6
+        model = 'discrete';
+    end
+        
+    initDecoder = @(varargin) struct([]);
+    
+    makeSubDecoderFun = @(S,idx,k) structfun(@(v) makeSubDecoder(v,idx,k),S,'UniformOutput',false);
+    
+    % this should really be OO at this point
+    if isstruct(model)
+        assert(isfield(model,'trainDecoder') && isa(model.trainDecoder,'function_handle') && isfield(model,'likelihoodFun') && isa(model.likelihoodFun,'function_handle'),'You must provide a training function and a likelihood function');
+        trainDecoder = model.trainDecoder;
+        likelihoodFun = model.likelihoodFun;
+        
+        if isfield(model,'initDecoder') && isa(model.initDecoder,'function_handle')
+            initDecoder = model.initDecoder;
+        end
+        
+        if isfield(model,'makeSubDecoder') && isa(model.makeSubDecoder,'function_handle')
+            makeSubDecoderFun = model.makeSubDecoder;
+        end
+    elseif strcmp(model,'kde')
+        trainDecoder = @trainKDEDecoder;
+        likelihoodFun = @getKDELikelihood;
+        initDecoder = @initKDEDecoder;
+    elseif strcmp(model,'discrete')
+        trainDecoder = @trainDiscreteDecoder;
+        likelihoodFun = @getDiscreteLikelihood;
+        initDecoder = @initDiscreteDecoder;
+    elseif strcmp(model,'mixedBernoulliGaussian')
+        trainDecoder = @trainMBGDecoder;
+        likelihoodFun = @getMBGLikelihood;
+    elseif strcmp(model,'mixedBernoulliKDE')
+        trainDecoder = @trainMBKDecoder;
+        likelihoodFun = @getMBKLikelihood;
+        initDecoder = @initKDEDecoder;
+    else
+        error('Unknown model %s\n',model);
+    end
+
+    if nargin < 5
+        nReps = 0;
+    end
+    
+    if nargin < 4
+        subUnits = [];
+    end
+    
+    if nargin < 3
+        subTrials = [];
+    end
+    
+    decoderParams = initDecoder(s,R,lb,ub);
+    
+    nsu = numel(subUnits);
+    nst = numel(subTrials);
+    
+    perfVTrials = zeros(nReps,nst);
+    ns = N/m;
+    
+    if ~trainPrior
+        prior = constructPrior(1:N,s,m,N);
+    end
+    
+    for ii = 1:nst
+        nt = subTrials(ii);
+        
+        for jj = 1:nReps
+            idx = randperm(ns,nt);
+            % TODO : this only works if equal numbers of stimuli
+            trainIndices = repmat(idx(:),m,1) + ns*kron((0:m-1)',ones(nt,1));
+    
+            if trainPrior
+                prior = constructPrior(trainIndices,s,m,N);
+            end
+            
+            decoder = trainDecoder(trainIndices,s,R,decoderParams);
+            
+            testIndices = setdiff(1:N,trainIndices);
+            nTests = numel(testIndices);
+            
+            for kk = 1:nTests
+                perfVTrials(jj,ii) = perfVTrials(jj,ii) + testResponse(testIndices(kk),s,R,decoder,prior,likelihoodFun)/nTests;
+            end
+        end
+    end
+    
+    unitIndices = cell(nReps,nsu);
+    
+    for ii = 1:nsu
+        nu = subUnits(ii);
+        
+        for jj = 1:nReps
+            unitIndices{jj,ii} = randperm(k,nu);
+        end
+    end
+    
+    perfVUnits = zeros(nReps,nsu);
+    
+    correct = zeros(N,1);
+    
+    for ii = 1:N
+        trainIndices = setdiff(1:N,ii);
+    
+        if trainPrior
+            prior = constructPrior(trainIndices,s,m,N);
+        end
+        
+%         if exist('newBW','var');
+%             oldBW = newBW;
+%         end
+        
+        decoder = trainDecoder(trainIndices,s,R,decoderParams);
+        
+%         if isfield(decoder,'bw')
+%             newBW = decoder.bw;
+%             
+%             if exist('oldBW','var')
+%                 disp(corr(oldBW(:),newBW(:)));
+%                 disp(mean(abs(oldBW(:)-newBW(:))));
+%             end
+%         end
+        
+        correct(ii) = testResponse(ii,s,R,decoder,prior,likelihoodFun);
+        
+        for jj = 1:nReps
+            for kk = 1:nsu
+                idx = unitIndices{jj,kk};
+                
+                subDecoder = makeSubDecoderFun(decoder,idx,k);
+%                 if model
+%                     subDecoder = struct('ps',decoder.ps,'prk',decoder.prk(:,idx),'prks',decoder.prks(:,idx,:),'x',decoder.x);
+% %                     % this is bad code but it's more efficient for the
+% %                     % non-KDE case
+% %                     subDecoder = trainDecoder(trainIndices,s,R(:,idx));
+%                 else
+%                     subDecoder = struct('ps',decoder.ps,'prk',decoder.prk(idx),'prks',decoder.prks(idx));
+%                 end
+                
+                perfVUnits(jj,kk) = perfVUnits(jj,kk) + testResponse(ii,s,R(:,idx),subDecoder,prior,likelihoodFun)/N;
+            end
+        end
+    end
+    
+    fractionCorrect = sum(correct)/N;
+end
+
+function prior = constructPrior(trainIndices,s,m,N)
+    prior = zeros(1,m);
+
+    for ii = 1:m
+        prior(ii) = sum(s(trainIndices) == ii)/N;
+    end
+end
+
+function correct = testResponse(testIndex,s,R,model,prior,logLikelihoodFun)
+    response = R(testIndex,:);
+    logLikelihood = logLikelihoodFun(response,model);
+    
+    % TODO : something more mathematically rigorous than this
+    logLikelihood(isinf(logLikelihood)) = log(eps);
+    
+    logPosterior = log(repmat(prior,size(R,2),1)) + logLikelihood; % - log(repmat(model,1,size(prior,2)));
+    logPosterior = mean(logPosterior,1);
+
+    decodedStimuli = find(logPosterior == max(logPosterior));
+    targetStimulus = s(testIndex);
+
+    if numel(decodedStimuli) == 1
+        correct = decodedStimuli == targetStimulus;
+    elseif ismember(targetStimulus,decodedStimuli)
+        correct = 1/numel(decodedStimuli);
+    else
+        correct = 0;
+    end
+end
+
+function newValues = makeSubDecoder(oldValues,featureIndices,nFeatures)
+    s = size(oldValues);
+    
+    d = find(s == nFeatures,1);
+    
+    if isempty(d)
+        newValues = oldValues;
+        return;
+    end
+    
+    coords = repmat({':'},1,ndims(oldValues));
+    coords{d} = featureIndices;
+    
+    newValues = oldValues(coords{:});
+end
+
+function params = initDiscreteDecoder(s,R,varargin)
+    k = size(R,2);
+    vk = cell(k,1);
+    nk = zeros(k,1);
+
+    for ii = 1:k
+        [v,~,r] = unique(R(:,ii));
+        vk{ii} = v;
+        nk(ii) = numel(v);
+        R(:,ii) = r;
+    end
+    
+    params = struct('m',max(s),'nk',nk,'R',R);
+    params.vk = vk;
+end
+
+function params = initKDEDecoder(s,R,lb,ub)
+    assert(all(R(:) >= lb),'Empirical response probability must be zero below the support of the response distribution');
+%     assert(all(R(:) <= ub),'Empirical response probability must be zero above the support of the response distribution');
+        
+    n = 2^12;
+    k = size(R,2);
+    
+    if n == k % this would break makeSubDecoder but is also extremely unlikely to happen
+        n = 2^13;
+    end
+    
+    m = max(s);
+        
+    bw = zeros(k,m);
+    
+    for ii = 1:k
+        r = R(:,ii);
+        
+        for jj = 1:m
+            rs = r(s == jj);
+        
+            [bw(ii,jj),~,xmesh] = kde(rs(isfinite(rs)),n,lb,ub);
+            
+            if ii == 1 && jj == 1 || (~all(isfinite(x)) && all(isfinite(xmesh)))
+                x = xmesh;
+            end
+        end
+    end
+    
+    params = struct('bw',bw,'lb',lb,'ub',ub,'x',x);
+end
+
+function pdf = kernelPDFEstimate(sample,x,bw,lb,ub)
+    if all(sample < lb | sample > ub)
+        pdf = zeros(size(x));
+        return;
+    end
+    
+    % this is ripped wholesale from kde.m with some renaming of
+    % variables
+    % histogram
+    h = histc(sample,x);
+    h = h(:)/sum(h);
+
+    % dct1d
+    n = numel(x);
+    w = [1;2*(exp(-1i*(1:n-1)*pi/(2*n))).'];
+    a = [ h(1:2:end,:); h(end:-2:2,:) ];
+    a = real(w.* fft(a));
+
+    % idct1d
+    t_star = (bw/(ub-lb))^2;
+    b = a.*exp(-(0:n-1)'.^2*pi^2*t_star/2);
+%             n = size(b,1);
+    w = n*exp(1i*(0:n-1)*pi/(2*n)).';
+    b = real(ifft(w.*b));
+
+    pdf = zeros(n,1);
+    pdf(1:2:n) = b(1:n/2);
+    pdf(2:2:n) = b(n:-1:n/2+1);
+            
+    if any(pdf < 0)
+        pdf = pdf-min(pdf);
+    end
+    
+    pdf(pdf == 0) = eps;
+    
+    assert(all(pdf > 0));
+    
+    pdf = pdf/sum(pdf);
+end
+
+function pdfs = trainKDEDecoder(trainIndices,s,R,params)
+%     nb = NaiveBayes.fit(R(trainIndices,:),s(trainIndices),'Distribution','kernel','KSSupport',[lb ub]);
+    n = 2^12;
+    k = size(R,2);
+    
+    if n == k % this would break makeSubDecoder but is also extremely unlikely to happen
+        n = 2^13;
+    end
+    
+    m = max(s);
+    
+    prks = zeros(n,k,m);
+    bw = params.bw;
+    lb = params.lb;
+    ub = params.ub;
+    x = params.x;
+    
+    for ii = 1:k
+        for jj = 1:m
+            idx = s(trainIndices) == jj;
+            prks(:,ii,jj) = kernelPDFEstimate(R(trainIndices(idx),ii),x,bw(ii,jj),lb,ub);
+        end
+    end
+    
+    assert(all(isfinite(x)));
+    
+%     f1 = figure;
+%     hold on;
+%     
+%     [h,b] = hist(R(trainIndices,:));
+%     bar(b,h./repmat(sum(h),10,1));
+%     plot(x,prk);
+%     
+%     f2 = figure;
+%     
+%     for ii = 1:m
+%         subplot(2,4,ii);
+%         hold on;
+%         idx = s(trainIndices) == ii;
+%         [hs,bs] = hist(R(trainIndices(idx),:));
+%         bar(bs,hs./repmat(sum(hs),10,1));
+%         plot(x,prks(:,:,ii));
+%     end
+%     
+%     close(f1);
+%     close(f2);
+    
+    pdfs = struct('prks',prks,'x',params.x);
+end
+
+function model = trainMBGDecoder(trainIndices,s,R,varargin)
+    m = max(s);
+        
+    k = size(R,2);
+    params = zeros(k,m,3); % log q, mu, sigma
+    
+    for ii = 1:k
+        r = R(trainIndices,ii);
+        
+        for jj = 1:m
+            rs = r(s(trainIndices) == jj);
+        
+            isResponse = isfinite(rs);
+            params(ii,jj,1) = sum(~isResponse)/numel(rs);
+
+            rs = rs(isResponse);
+
+            params(ii,jj,2) = mean(rs);
+            params(ii,jj,3) = std(rs);
+        end
+    end
+    
+    model = struct('params',params); 
+end
+
+function model = trainMBKDecoder(trainIndices,s,R,params)
+    n = 2^12;
+    k = size(R,2);
+    
+    if n == k % this would break makeSubDecoder but is also extremely unlikely to happen
+        n = 2^13;
+    end
+    
+    m = max(s);
+        
+    prks = zeros(n,k,m);
+    qrks = zeros(k,m); % log q, mu, sigma
+    bw = params.bw;
+    lb = params.lb;
+    ub = params.ub;
+    x = params.x;
+    
+    for ii = 1:k
+        r = R(trainIndices,ii);
+        
+        for jj = 1:m
+            rs = r(s(trainIndices) == jj);
+        
+            isResponse = isfinite(rs);
+            qrks(ii,jj) = sum(~isResponse)/numel(rs);
+            
+            prks(:,ii,jj) = kernelPDFEstimate(rs(isResponse),x,bw(ii,jj),lb,ub);
+        end
+    end
+    
+    model = struct('bw',bw,'prks',prks,'qrks',qrks,'x',x); 
+end
+
+% function [ps,prk,prks] = trainDiscreteDecoder(trainIndices,s,R,vk,nk,m,N)
+function pdfs = trainDiscreteDecoder(trainIndices,s,~,params)
+    m = params.m;
+    nk = params.nk;
+    vk = params.vk;
+    R = params.R;
+    
+    N = numel(trainIndices);
+    prks = cellfun(@(v) zeros(numel(v),m),vk,'UniformOutput',false);
+    
+    for ii = 1:m
+        sameStimulus = s(trainIndices) == ii;
+        ns = sum(sameStimulus);
+
+        for jj = 1:numel(nk)
+            n = nk(jj);
+
+            for kk = 1:n
+                nrs = sum(sameStimulus & R(trainIndices,jj) == kk);
+                prks{jj}(kk,ii) = nrs/ns;
+            end
+        end
+    end
+    
+    pdfs = struct('nk',nk,'prks',{prks},'vk',{vk});
+end
+
+function likelihood = getKDELikelihood(response,model)
+    k = size(model.prks,2);
+    m = size(model.prks,3);
+    
+	likelihood = zeros(k,m);
+    
+    for ii = 1:k
+        likelihood(ii,:) = interp1(model.x,model.prks(:,ii,:),response(ii));
+    end
+    
+    % outside the bounds of the KDE
+    likelihood(isnan(likelihood)) = 0;
+    
+    likelihood = log(likelihood);
+end
+
+function likelihood = getMBGLikelihood(response,model)
+    k = size(model.params,1);
+    m = size(model.params,2);
+    
+    likelihood = zeros(k,m);
+    
+    for ii = 1:k
+        if isinf(response(ii))
+            likelihood(ii,:) = model.params(ii,:,1);
+            continue;
+        end
+        
+        likelihood(ii,:) = (1-model.params(ii,:,1)).*normpdf(response(ii),model.params(ii,:,2),model.params(ii,:,3));
+        
+        isDegenerate = model.params(ii,:,3) == 0;
+        
+        % MATLAB gives normpdf(x,m,0) == NaN for all x,m - but we can do
+        % better than that. A 0 std normal distribution is a Dirac delta,
+        % so p(x == m) = 1 and p(x == n) = 0 for all n ~= m.
+        likelihood(ii,isDegenerate) = response(ii) == model.params(ii,isDegenerate,2);
+    end
+    
+    % NaNs will happen when the test response is finite but there were only
+    % Infs in the training set (because (1-1)*normpdf(x,NaN,NaN) = NaN).
+    likelihood(isnan(likelihood)) = 0;
+    
+    likelihood = log(likelihood);
+end
+
+function likelihood = getMBKLikelihood(response,model)
+    k = size(model.qrks,1);
+    
+    likelihood = getKDELikelihood(response,model);
+    
+    for ii = 1:k
+        if isinf(response(ii))
+            likelihood(ii,:) = log(model.qrks(ii,:));
+            continue;
+        end
+        
+        likelihood(ii,:) = log(1-model.qrks(ii,:))+likelihood(ii,:);
+    end
+end
+
+function psrk = getDiscreteLikelihood(response,pdfs)
+    prks = pdfs.prks;    
+
+    m = size(prks{1},2);
+    k = numel(response);
+    psrk = zeros(k,m);
+        
+    for ii = 1:k
+        psrk(ii,:) = prks{ii}(response(ii) == pdfs.vk{ii},:);
+    end
+    
+    psrk = log(psrk);
+end
