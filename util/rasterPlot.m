@@ -64,7 +64,11 @@ function [figs,lines,edges,hists,trials,subs,nSpikess] = rasterPlot(figs,varargi
     if noPlot
         figs = NaN;
     else
-        figs((nFigs+1):nGroups) = zeros(nGroups-nFigs,1);
+        if verLessThan('matlab','R2013a')
+            figs((nFigs+1):nGroups) = zeros(nGroups-nFigs,1);
+        else
+            figs((nFigs+1):nGroups) = gobjects(nGroups-nFigs,1);
+        end
 
         for ii = (nFigs+1):nGroups
             figs(ii) = figure('Visible','off');
@@ -291,6 +295,13 @@ function [figs,lines,edges,hists,trials,subs,nSpikess] = rasterPlot(figs,varargi
             supertitle = sprintf(['%s' repmat(', ',1,ii > 2) '%s = %' dataType],supertitle,varNames{ii},uniqueGroups(hh,ii-1));
         end
         
-        suptitle(supertitle);
+        if exist('suptitle','file')
+            suptitle(supertitle);
+        else
+            fakeAxis = subplot('Position',[0.5 0.975 0 0]);
+            set(fakeAxis,'Visible','off');
+            plot(fakeAxis,0,0);
+            text(0,0,supertitle,'FontSize',16,'FontWeight','bold','HorizontalAlignment','center','Parent',fakeAxis,'VerticalAlignment','middle');
+        end
     end
 end

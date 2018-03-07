@@ -1,24 +1,29 @@
-function [figs,lines,edges,hists,trials,subs,nSpikess] = rasterPlot(fig,varargin) %spikeTimes,stimulusTimes,conditions,tmin,tmax,isPSTH,bw,groups,varNames,isHz)
-    isHandle = numel(fig) == 1 && ishandle(fig);
+function [figs,lines,edges,hists,trials,subs,nSpikess] = rasterPlot(figs,varargin) %spikeTimes,stimulusTimes,conditions,tmin,tmax,isPSTH,bw,groups,varNames,isHz)
+    isHandle = all(ishandle(figs));
     
     noPlot = false;
     if isHandle
         args = varargin;
-        handleType = get(fig,'type');
+        handleTypes = get(figs,'type');
         
-        if ~strcmp(handleType,'figure')
+        if ~all(strcmp('figure',handleTypes))
             error('Unknown handle type');
         end
         
-        f = fig;
-        set(f,'Visible','off');
-        clf;
-    elseif (islogical(fig) && ~fig) || any(isnan(fig))
+        nFigs = numel(figs);
+        
+        for ii = 1:numel(figs)
+            set(figs(ii),'Visible','off');
+            clf(figs(ii));
+        end
+    elseif (islogical(figs) && ~any(figs)) || any(isnan(figs))
         noPlot = true;
         args = varargin;
+        nFigs = 0;
     else
-        args = {fig varargin{:}}; %#ok<CCAT>
-        f = figure('Visible','off');
+        args = {figs varargin{:}}; %#ok<CCAT>
+        figs = figure('Visible','off');
+        nFigs = 1;
     end
     
     nargin = numel(args);
@@ -59,10 +64,13 @@ function [figs,lines,edges,hists,trials,subs,nSpikess] = rasterPlot(fig,varargin
     if noPlot
         figs = NaN;
     else
-        figs = ones(nGroups,1);
-        figs(1) = f;
+        if verLessThan('matlab','R2013a')
+            figs((nFigs+1):nGroups) = zeros(nGroups-nFigs,1);
+        else
+            figs((nFigs+1):nGroups) = gobjects(nGroups-nFigs,1);
+        end
 
-        for ii = 2:nGroups
+        for ii = (nFigs+1):nGroups
             figs(ii) = figure('Visible','off');
         end
     end
@@ -125,15 +133,15 @@ function [figs,lines,edges,hists,trials,subs,nSpikess] = rasterPlot(fig,varargin
     [rows,cols] = subplots(nConditions);
     
     lines = cell(nConditions,nGroups);
+    nSpikess = cell(nConditions,nGroups);
     
     if isPSTH
         edges = ((floor(ts(1)/bw)*bw:bw:bw*ceil(ts(end)/bw)))';
-        hists = zeros(numel(edges),nConditions,nGroups);
-        nSpikess = cell(nConditions,nGroups);
+        nEdges = numel(edges);
+        hists = zeros(nEdges-1,nConditions,nGroups);
     else
         edges = NaN;
         hists = NaN;
-        nSpikess = zeros(0,nConditions,nGroups);
     end
     
     for ii = 1:numel(stimulusTimes);
@@ -158,33 +166,29 @@ function [figs,lines,edges,hists,trials,subs,nSpikess] = rasterPlot(fig,varargin
         
         lines{condition,group}{end+1} = spikesInTrial;
         
-        if ~isPSTH
-            nSpikes = numel(spikesInTrial);
+        if isPSTH
+            if isempty(spikesInTrial)
+                nSpikes = zeros(1,nEdges-1);
+            else
+                nSpikes = reshape(histc(spikesInTrial,edges),1,nEdges);
+                nSpikes = nSpikes(1:nEdges-1); % last bin is always empty
+            end
             
-            if size(nSpikess,1) < trials(condition,group)
-                nSpikess(end+1,condition,group) = nSpikes; %#ok<AGROW>
-            else
-                nSpikess(trials(condition,group),condition,group) = nSpikes;
-            end
-        else
-            if ~isempty(spikesInTrial)
-                nSpikes = reshape(histc(spikesInTrial,edges),numel(edges),1);
-            else
-                nSpikes = zeros(numel(edges,1));
-            end
-        
-            nSpikess(end+1,:,condition,group) = nSpikes; %#ok<AGROW>
             hists(:,condition,group) = hists(:,condition,group) + nSpikes';
         else
-            nSpikes
+            nSpikes = numel(spikesInTrial);
+        end
+        
+        if isempty(nSpikess{condition,group})
+            nSpikess{condition,group} = nSpikes;
+        else
+            nSpikess{condition,group}(end+1,:) = nSpikes;
         end
     end
     
     if isPSTH
-        hists = hists(1:end-1,:,:);
-        
         if isHz
-            hists = hists./(repmat(reshape(trials,[1 nConditions nGroups]),numel(edges)-1,1)*bw);
+            hists = hists./(repmat(reshape(trials,[1 nConditions nGroups]),nEdges-1,1)*bw);
         end
         
         maxH = max(max(max(hists)));
@@ -193,6 +197,7 @@ function [figs,lines,edges,hists,trials,subs,nSpikess] = rasterPlot(fig,varargin
     end
     
     if noPlot
+        subs = NaN;
         return;
     end
     
@@ -290,6 +295,9 @@ function [figs,lines,edges,hists,trials,subs,nSpikess] = rasterPlot(fig,varargin
             supertitle = sprintf(['%s' repmat(', ',1,ii > 2) '%s = %' dataType],supertitle,varNames{ii},uniqueGroups(hh,ii-1));
         end
         
-        suptitle(supertitle);
+        if exist('suptitle','file')
+            suptitle(supertitle);
+        else
+            fakeAxis = subplot('Position
     end
 end
